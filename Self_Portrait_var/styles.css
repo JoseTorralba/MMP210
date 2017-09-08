@@ -1,5 +1,5 @@
 #home {
-    background-color: ;
+    background-color: #333;
     font-family: sans-serif;
 }
 #wrapper{
@@ -9,13 +9,22 @@
 }
 
 
-header{
-    background-image: url("img/class_logo.png");
-    background-size: 1000px 200px;
-	width: auto;
-	height: 200px;
-	margin-bottom: 10px;
 
+body{
+    /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+
+header{
+    background-image: url("img/flowers_of_evil.jpg");
+	width: auto;
+	height: 340px;
+	margin-bottom: ;
+    background-position: center;
 }
 
 ul{
@@ -25,7 +34,7 @@ ul{
     padding-left: 10px;
     padding-right: 10px;
     overflow: hidden;
-    background-color: #565656;
+    background-color: #333;
 }
 .link {
     font-size: 2em;
@@ -75,7 +84,7 @@ h1, p{
 .text{
     border-style: solid;
     border-width: thin;
-    background-color: #D7CEC7;
+    background-color: azure;
     
 }
 
