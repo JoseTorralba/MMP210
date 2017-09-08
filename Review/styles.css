@@ -1,5 +1,5 @@
 #home {
-    background-color: #262429;
+    background-color: burlywood;
     font-family: sans-serif;
 }
 ul{
@@ -18,14 +18,10 @@ a:hover{
     color: deeppink;
 }
 li, a {
-    color: #FAEC33;
+    color: skyblue;
     transition: color 500ms;
 }
 #home a{
     text-decoration: none;
     border-top: 1px dotted blue;
-}
-
-h1, p{
-    color: #FAEC33
 }
