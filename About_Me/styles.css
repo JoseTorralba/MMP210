@@ -82,6 +82,13 @@ h1, p{
 p{
     color: black;
     padding: 10px;
-    text-align: left;
+    text-align: center;
 
+}
+
+img{
+    padding: 40px;
+    width: 400px;
+    transform: rotate(90deg);
+    
 }
