@@ -3,10 +3,8 @@ function preload() {
     myFont = loadFont('font/Kingdom_Hearts_Font.ttf');
     myFont2 = loadFont('font/KH2_menu_font.ttf');
 }
-
 function setup() {
     var canvas = createCanvas(900, 500);
-    
     canvas.parent('sketch-holder');
     background('#f5f5dc');
 
@@ -33,10 +31,7 @@ function setup() {
 
     fill(black);
     rect(250, 275, 400, 10);
-
-
-    
-    
+   
 /* Menu Screen */
 
     fill(black);
@@ -57,9 +52,6 @@ function setup() {
     fill(black);
     rect(270, 228, 240, 2);
 
-
-
-
 /* Kingdom Hearts Title/Options Font */
 
     textFont(myFont);
@@ -77,7 +69,6 @@ function setup() {
     textFont(myFont2);
     textSize(15);
     text("LOAD GAME", 295, 225);
-
 
 /* Sora (CoM Sprite) */
 
@@ -243,9 +234,9 @@ function setup() {
     rect(600, 95, 5, 5);
     rect(565, 125, 5, 5);
     rect(555, 130, 5, 5);
-    rect(545, 125, 5, 5);   
+    rect(545, 125, 5, 5);
     rect(535, 115, 5, 5);
-    rect(530, 70, 5, 5); 
+    rect(530, 70, 5, 5);
     rect(565, 65, 5, 5);
     rect(565, 70, 5, 5);
     rect(540, 70, 5, 5);
