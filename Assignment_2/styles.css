@@ -1,5 +1,5 @@
 #home {
-    background-color: #333;
+    background-color: ;
     font-family: sans-serif;
 }
 #wrapper{
@@ -9,22 +9,13 @@
 }
 
 
-
-body{
-    /* This centers our sketch horizontally. */
-  justify-content: center;
-
-  /* This centers our sketch vertically. */
-  align-items: center;
-}
-
-
 header{
-    background-image: url("img/flowers_of_evil.jpg");
+    background-image: url("img/class_logo.png");
+    background-size: 1000px 200px;
 	width: auto;
-	height: 340px;
-	margin-bottom: ;
-    background-position: center;
+	height: 200px;
+	margin-bottom: 10px;
+
 }
 
 ul{
@@ -34,7 +25,7 @@ ul{
     padding-left: 10px;
     padding-right: 10px;
     overflow: hidden;
-    background-color: #333;
+    background-color: #565656;
 }
 .link {
     font-size: 2em;
@@ -43,15 +34,26 @@ ul{
     display: inline;
 }
 a{
-    color: azure;
+    color: white;
+    
 }
 a:hover{
-    color: red;
+    color: #76323F;
     transition: color 0.1s ease-in-out;
 	transition: all 0.5s;
-	background: white;
-	
+	background: #D7CEC7;
+    
+    padding-top: 20px;
+	padding-bottom: 20px;
+
 }
+
+a:active{
+    color:white; 
+}
+
+
+
 }
 li{
    
@@ -77,14 +79,16 @@ h1, p{
     border-style: solid;
     border-width: thin;
     text-align: center
+    
 }
 
 /* CSS Above is for the background and design for the nav bar. */
 
 .text{
+    margin-top: 10px;
     border-style: solid;
     border-width: thin;
-    background-color: azure;
+    background-color: #D7CEC7;
     
 }
 
@@ -93,4 +97,26 @@ p{
     padding: 10px;
     text-align: left;
 
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    color: black;
+    padding: 10px;
+    text-align: left;
+    padding-left:200px;
+    padding-right:200px;
+    
+
+}
+
+
+
+
+#sketch-holder{
+    background color: #D7CEC7;
+    text-align: center;
 }
