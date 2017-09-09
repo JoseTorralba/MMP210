@@ -10,20 +10,15 @@ function setup() {
     canvas.parent('sketch-holder');
     background('#f5f5dc');
 
-    var white = color ('white')
-    var black = color ('black')
-    var darkbrown = color('#5c4535')
-    var lightbrown = color ('#7b622a')
-    var darkishorange = color('#c78419')
-    var lightblue = color ('#7592ca')
-    var blue = color ('#2160af')
-    var lightpink = color ('#f5cdc7')
-    var brightyellow = color('#FFFD9F')
-
-
-
-
-
+    var white = color ('white');
+    var black = color ('black');
+    var darkbrown = color('#5c4535');
+    var lightbrown = color ('#7b622a');
+    var darkishorange = color('#c78419');
+    var lightblue = color ('#7592ca');
+    var blue = color ('#2160af');
+    var lightpink = color ('#f5cdc7');
+    var brightyellow = color('#FFFD9F');
 
 
 
@@ -60,10 +55,10 @@ function setup() {
     rect(273.5, 213.5, 13, 13);
 
     fill(black);
-    rect(270, 198, 240, 2)
+    rect(270, 198, 240, 2);
 
     fill(black);
-    rect(270, 228, 240, 2)
+    rect(270, 228, 240, 2);
 
 
 
