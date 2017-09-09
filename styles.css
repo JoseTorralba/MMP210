@@ -34,15 +34,26 @@ ul{
     display: inline;
 }
 a{
-    color: azure;
+    color: white;
+    
 }
 a:hover{
-    color: red;
+    color: #76323F;
     transition: color 0.1s ease-in-out;
 	transition: all 0.5s;
-	background: white;
-	
+	background: #D7CEC7;
+    
+    padding-top: 20px;
+	padding-bottom: 20px;
+
 }
+
+a:active{
+    color:white; 
+}
+
+
+
 }
 li{
    
@@ -68,11 +79,13 @@ h1, p{
     border-style: solid;
     border-width: thin;
     text-align: center
+    
 }
 
 /* CSS Above is for the background and design for the nav bar. */
 
 .text{
+    margin-top: 10px;
     border-style: solid;
     border-width: thin;
     background-color: #D7CEC7;
