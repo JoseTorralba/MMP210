@@ -20,14 +20,6 @@ function setup() {
     var lightpink = color ('#f5cdc7')
     var brightyellow = color('#FFFD9F')
 
-
-
-
-
-
-
-
-
 /* TV */
 
     fill(black);
