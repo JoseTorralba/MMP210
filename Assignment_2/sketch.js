@@ -1,6 +1,7 @@
 var myFont;
 function preload() {
-  myFont = loadFont('font/Kingdom_Hearts_Font.ttf');
+    myFont = loadFont('font/Kingdom_Hearts_Font.ttf');
+    myFont2 = loadFont('font/KH2_menu_font.ttf')
 }
 
 function setup() {
@@ -9,7 +10,6 @@ function setup() {
     canvas.parent('sketch-holder');
     background('#f5f5dc');
 
-    var tvColor = color ('black')
     var white = color ('white')
     var black = color ('black')
     var darkbrown = color('#5c4535')
@@ -18,24 +18,73 @@ function setup() {
     var lightblue = color ('#7592ca')
     var blue = color ('#2160af')
     var lightpink = color ('#f5cdc7')
-    
-    /* TV */
-    fill(tvColor);
+    var brightyellow = color('#FFFD9F')
+
+
+
+
+
+
+
+
+
+/* TV */
+
+    fill(black);
+    ellipse(450, 260, 20, 50);
+
+    fill(black);
     rect(250, 20, 400, 230);
 
     fill(white);
     rect(260, 30, 380, 210);
-    
 
-/* Kingdom Hearts Title/Font */
+    fill(black);
+    rect(250, 275, 400, 10);
+
+
+    
+    
+/* Menu Screen */
+
+    fill(black);
+    rect(270, 180, 20, 20);
+
+    fill(black);
+    rect(270, 210, 20, 20);
+
+    fill(brightyellow);
+    rect(273.5, 183.5, 13, 13);
+
+    fill(brightyellow);
+    rect(273.5, 213.5, 13, 13);
+
+    fill(black);
+    rect(270, 198, 240, 2)
+
+    fill(black);
+    rect(270, 228, 240, 2)
+
+
+
+
+/* Kingdom Hearts Title/Options Font */
 
     textFont(myFont);
-    textSize(50);
+    textSize(55);
     fill('black');
-    text("Kingdom Hearts", 280, 110);
+    text("Kingdom Hearts", 270, 110);
 
     textSize(40)
     text("/", 385, 135);
+    
+    textFont(myFont2)
+    textSize(15)
+    text("NEW GAME", 295, 195)
+    
+    textFont(myFont2)
+    textSize(15)
+    text("LOAD GAME", 295, 225)
 
 
 /* Sora (CoM Sprite) */
@@ -680,9 +729,6 @@ function setup() {
 
     fill(lightpink);
     rect(555, 125, 5, 5);
-
-/* Finished */
-
 }
 
 
