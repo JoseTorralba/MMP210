@@ -1,7 +1,7 @@
 var myFont;
 function preload() {
     myFont = loadFont('font/Kingdom_Hearts_Font.ttf');
-    myFont2 = loadFont('font/KH2_menu_font.ttf')
+    myFont2 = loadFont('font/KH2_menu_font.ttf');
 }
 
 function setup() {
@@ -10,18 +10,15 @@ function setup() {
     canvas.parent('sketch-holder');
     background('#f5f5dc');
 
-    var white = color ('white');
-    var black = color ('black');
+    var white = color('white');
+    var black = color('black');
     var darkbrown = color('#5c4535');
-    var lightbrown = color ('#7b622a');
+    var lightbrown = color('#7b622a');
     var darkishorange = color('#c78419');
-    var lightblue = color ('#7592ca');
-    var blue = color ('#2160af');
-    var lightpink = color ('#f5cdc7');
+    var lightblue = color('#7592ca');
+    var blue = color('#2160af');
+    var lightpink = color('#f5cdc7');
     var brightyellow = color('#FFFD9F');
-
-
-
 
 /* TV */
 
@@ -70,21 +67,21 @@ function setup() {
     fill('black');
     text("Kingdom Hearts", 270, 110);
 
-    textSize(40)
+    textSize(40);
     text("/", 385, 135);
     
-    textFont(myFont2)
-    textSize(15)
-    text("NEW GAME", 295, 195)
+    textFont(myFont2);
+    textSize(15);
+    text("NEW GAME", 295, 195);
     
-    textFont(myFont2)
-    textSize(15)
-    text("LOAD GAME", 295, 225)
+    textFont(myFont2);
+    textSize(15);
+    text("LOAD GAME", 295, 225);
 
 
 /* Sora (CoM Sprite) */
 
-    noStroke()
+    noStroke();
 
     fill(black);
     rect(550, 50, 5, 5);
@@ -728,7 +725,5 @@ function setup() {
 
 
 function draw() {
-
-   
 
 }
