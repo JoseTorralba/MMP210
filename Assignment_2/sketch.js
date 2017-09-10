@@ -1,8 +1,3 @@
-var myFont;
-function preload() {
-    myFont = loadFont('font/Kingdom_Hearts_Font.ttf');
-    myFont2 = loadFont('font/KH2_menu_font.ttf');
-}
 function setup() {
     var canvas = createCanvas(900, 500);
     canvas.parent('sketch-holder');
@@ -10,65 +5,114 @@ function setup() {
 
     var white = color('white');
     var black = color('black');
-    var darkbrown = color('#5c4535');
-    var lightbrown = color('#7b622a');
-    var darkishorange = color('#c78419');
-    var lightblue = color('#7592ca');
-    var blue = color('#2160af');
-    var lightpink = color('#f5cdc7');
+    var darkbrown = color('#5C4535');
+    var lightbrown = color('#7B622A');
+    var darkishorange = color('#C78419');
+    var lightblue = color('#7592CA');
+    var blue = color('#2160AF');
+    var lightpink = color('#F5CDC7');
     var brightyellow = color('#FFFD9F');
+    var gray = color('#565656');
+    var ps4Blue = color('#003791');
+    var darkGray = color('#2C2C30');
+    var lightGray = color('#969696');
 
 /* TV */
 
     fill(black);
     ellipse(450, 260, 20, 50);
-
-    fill(black);
     rect(250, 20, 400, 230);
+    rect(250, 275, 400, 10);
 
     fill(white);
     rect(260, 30, 380, 210);
 
+/* Furniture */
+
+    fill(gray);
+    rect(170, 286, 550, 160);
+
+    fill(lightGray);
+    rect(190, 300, 510, 75);
+
+    fill(gray);
+    rect(440, 300, 20, 75);
+
+/*PS4*/
+
+    fill(gray);
+    quad(515, 373, 625, 373, 620, 360, 520, 360);
+    quad(520, 357, 620, 357, 615, 345, 525, 345);
+
+    fill(darkGray);
+    rect(525, 357, 90, 2);
+    quad(520, 357, 560, 357, 560, 345, 525, 345);
+
+    textSize(9);
     fill(black);
-    rect(250, 275, 400, 10);
-   
+    text("PS4", 595, 354);
+
+/* Game Box */
+
+    fill(ps4Blue);
+    rect(190, 300, 10, 75, 3);
+    rect(200, 300, 10, 75, 3);
+    rect(210, 300, 10, 75, 3);
+    rect(220, 300, 10, 75, 3);
+    rect(230, 300, 10, 75, 3);
+    rect(240, 300, 10, 75, 3);
+    rect(250, 300, 10, 75, 3);
+    rect(260, 300, 10, 75, 3);
+    rect(270, 300, 10, 75, 3);
+    rect(280, 300, 10, 75, 3);
+    rect(290, 300, 10, 75, 3);
+    rect(300, 300, 10, 75, 3);
+    rect(310, 300, 10, 75, 3);
+    rect(320, 300, 10, 75, 3);
+    rect(330, 300, 10, 75, 3);
+    rect(340, 300, 10, 75, 3);
+    rect(350, 300, 10, 75, 3);
+
+    fill(white);
+    rect(190, 318, 10, 50);
+    rect(200, 318, 10, 50);
+    rect(210, 318, 10, 50);
+    rect(220, 318, 10, 50);
+    rect(230, 318, 10, 50);
+    rect(240, 318, 10, 50);
+    rect(250, 318, 10, 50);
+    rect(260, 318, 10, 50);
+    rect(270, 318, 10, 50);
+    rect(280, 318, 10, 50);
+    rect(290, 318, 10, 50);
+    rect(300, 318, 10, 50);
+    rect(310, 318, 10, 50);
+    rect(320, 318, 10, 50);
+    rect(330, 318, 10, 50);
+    rect(340, 318, 10, 50);
+    rect(350, 318, 10, 50);
+
 /* Menu Screen */
 
     fill(black);
     rect(270, 180, 20, 20);
-
-    fill(black);
     rect(270, 210, 20, 20);
+    rect(270, 198, 240, 2);
+    rect(270, 228, 240, 2);
 
     fill(brightyellow);
     rect(273.5, 183.5, 13, 13);
-
-    fill(brightyellow);
     rect(273.5, 213.5, 13, 13);
 
+/* Kingdom Hearts Title/Options */
+
+    textSize(30);
     fill(black);
-    rect(270, 198, 240, 2);
-
-    fill(black);
-    rect(270, 228, 240, 2);
-
-/* Kingdom Hearts Title/Options Font */
-
-    textFont(myFont);
-    textSize(55);
-    fill('black');
     text("Kingdom Hearts", 270, 110);
 
-    textSize(40);
-    text("/", 385, 135);
-    
-    textFont(myFont2);
-    textSize(15);
-    text("NEW GAME", 295, 195);
-    
-    textFont(myFont2);
-    textSize(15);
-    text("LOAD GAME", 295, 225);
+    textSize(18);
+    text("NEW GAME", 295, 196);
+    text("LOAD", 295, 226);
 
 /* Sora (CoM Sprite) */
 
@@ -304,9 +348,52 @@ function setup() {
     fill(lightblue);
     rect(570, 115, 5, 5);
     rect(540, 115, 5, 5);
+
+/* Rotated Titles of Games */
+
+    translate(width / 2, height / 2);
+    rotate(PI / 2.0);
+    
+    textSize(6);
+    fill(black);
+
+    text("Kingdom Hearts", 72, 257);
+    text("Final Fantasy xv", 72, 247);
+    text("Persona 5", 80, 237);
+    text("Fallout 4", 82, 227);
+    text("NieR: Automata", 72, 217);
+    text("Skyrim", 85, 207);
+    text("Resident Evil", 76, 197);
+    text("Resident Evil 4", 72, 187);
+    text("Resident Evil 5", 72, 177);
+    text("Resident Evil 6", 72, 167);
+    text("Resident Evil 7", 72, 157);
+    text("The Evil Within", 72, 147);
+    text("Bloodborne", 72, 137);
+    text("Dark Souls III", 76, 127);
+    text("Black Ops III", 77, 117);
+    text("Uncharted 4", 78, 107);
+    text("Final Fantasy X", 72, 97);
+
+    textSize(6);
+    fill(white);
+    text("PS4", 55, 257);
+    text("PS4", 55, 247);
+    text("PS4", 55, 237);
+    text("PS4", 55, 227);
+    text("PS4", 55, 217);
+    text("PS4", 55, 207);
+    text("PS4", 55, 197);
+    text("PS4", 55, 187);
+    text("PS4", 55, 177);
+    text("PS4", 55, 167);
+    text("PS4", 55, 157);
+    text("PS4", 55, 147);
+    text("PS4", 55, 137);
+    text("PS4", 55, 127);
+    text("PS4", 55, 117);
+    text("PS4", 55, 107);
+    text("PS4", 55, 97);
 }
-
-
 function draw() {
-
 }
