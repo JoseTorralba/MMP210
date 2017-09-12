@@ -8,12 +8,8 @@
 	margin: 0 auto;
 }
 
-header{
-    background-image: url("img/class_logo.png");
-    background-size: 1000px 200px;
-	width: auto;
-	height: 200px;
-	margin-bottom: 10px;
+h1{
+    text-align: center;
 }
 
 ul{

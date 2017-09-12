@@ -1,22 +1,20 @@
 #home {
     background-color: ;
-    font-family: sans-serif;
+    font-family: helvetica;
 }
 #wrapper{
 	width: 1000px;
 	margin: 0 auto;
-
 }
 
+/* Centers Sketch*/
 
-header{
-    background-image: url("img/class_logo.png");
-    background-size: 1000px 200px;
-	width: auto;
-	height: 200px;
-	margin-bottom: 10px;
-
+#sketch-holder{
+    background color: #D7CEC7;
+    text-align: center;
 }
+
+/* Nav Starts Here */
 
 ul{
     
@@ -25,7 +23,6 @@ ul{
     padding-left: 10px;
     padding-right: 10px;
     overflow: hidden;
-    background-color: #565656;
 }
 .link {
     font-size: 2em;
@@ -34,7 +31,7 @@ ul{
     display: inline;
 }
 a{
-    color: white;
+    color: black;
     
 }
 a:hover{
@@ -42,7 +39,6 @@ a:hover{
     transition: color 0.1s ease-in-out;
 	transition: all 0.5s;
 	background: #D7CEC7;
-    
     padding-top: 20px;
 	padding-bottom: 20px;
 
@@ -57,9 +53,22 @@ a:active{
 }
 li{
    
-
-
 }
+
+#navdiv, ul{
+	width: 97.8%;
+	height: 50px;
+	background: ;
+	line-height: 50px;
+	font-size: 10px;
+    border-bottom-style: outset;
+    border-width: thin;
+    text-align: center
+    
+}
+
+/* Nav Ends Here */
+
 #home a{
     text-decoration: none;
 
@@ -70,33 +79,17 @@ li{
 h1, p{
     color: black;
 }
-#navdiv, ul{
-	width: 97.8%;
-	height: 50px;
-	background: ;
-	line-height: 50px;
-	font-size: 10px;
-    border-style: solid;
-    border-width: thin;
-    text-align: center
-    
-}
-
-/* CSS Above is for the background and design for the nav bar. */
 
 .text{
     margin-top: 10px;
-    border-style: solid;
-    border-width: thin;
-    background-color: #D7CEC7;
-    
+
+    border-width: thin;    
 }
 
 p{
     color: black;
     padding: 10px;
     text-align: left;
-
 }
 
 h1{
@@ -109,14 +102,4 @@ p{
     text-align: left;
     padding-left:200px;
     padding-right:200px;
-    
-
-}
-
-
-
-
-#sketch-holder{
-    background color: #D7CEC7;
-    text-align: center;
 }
