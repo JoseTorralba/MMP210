@@ -1,0 +1,203 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #f0eeee;
+}
+
+
+
+
+/* Fonts */
+
+@font-face {
+	font-family: "Code Bold";
+	src: url("fonts/CODEBold.otf");
+	src: url("fonts/CODEBold.otf") format("otf");
+}
+
+@font-face {
+	font-family: "Code Light";
+	src: url("fonts/CODEBold.otf");
+	src: url("fonts/CODEBold.otf") format("otf");
+}
+
+
+header{
+    text-align: center;
+    background-color: black;
+    border: solid;
+    border-right-style:none;
+    border-left-style:none;
+}
+
+/* Nav Starts Here */
+
+.navbar-default {
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+	float: none;
+	
+}
+
+
+.navbar-toggle 
+{
+    float:none;
+
+}   
+.navbar-header
+{
+    text-align:center;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+ul {
+	font-size: 20px;
+	font-family: "Code Bold";
+}
+
+li {}
+
+
+}
+.active {
+
+}
+
+/* Adds color to the nav when hovering over. */
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	background-color: #D7CEC7;
+	color: black;
+	transition: color 0.1s ease-in-out;
+	transition: all 0.5s;
+}
+a {
+	color: white;
+	transition: color 0.1s ease-in-out;
+	transition: all 0.5s;
+}
+a:hover {
+	color: red;
+}
+
+/* Nav Ends Here */
+
+h1 {
+	font-size: 60px;
+	color: white;
+	text-align: center;
+	font-size: ;
+	font-family: "Code Light";
+}
+h2 {
+	color: black;
+	text-align: center;
+	font-size: ;
+	font-family: "Code Light";
+	padding-bottom: 25px;
+}
+p {
+	width: auto;
+	color: black;
+	vertical-align: middle;
+	padding-bottom: 25px;
+}
+
+/* Responsive Text*/
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 22px;
+	}
+	
+	p {
+}
+}
+/* Responsive Text Ends Here */
+
+
+/* Assignment Hover Box */
+img {
+	width: 100%;
+	height: ;
+}
+
+.assignment-container {
+}
+
+.assignment-hover {
+	margin-bottom: 2em;
+}
+
+.assignment-hover a {
+	text-decoration: none;
+	color: #000;
+	position: relative;
+}
+
+.caption {
+	transition: .5s;
+}
+
+.assignment-hover a .caption {
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	font-size: 1.3em;
+	display: block;
+	font-weight: bold;
+	font-family: ;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	width: 100%;
+}
+
+.assignment-hover a .caption b {
+	font-size: 0.75em;
+	font-weight: lighter;
+	text-align: center;
+	text-transform: none;
+}
+
+.assignment-hover a:hover .caption {
+	opacity: 10;
+}
+
+.assignment-hover a img {
+	transition: .5s;
+}
+
+.assignment-hover a:hover img {
+	opacity: .2;
+	color:
+}
+
+/* Assignment Hover Ends */
+
+
+/* Footer */
+
+.footer {
+	text-align: center;
+	background-color: black;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+}
+
+.text-muted {
+    color: azure;
+	text-align: center;
+	padding-top: 40px;
+}
+
+/* Footer Ends Here*/

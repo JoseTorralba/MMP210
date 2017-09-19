@@ -1,0 +1,154 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+    background-color: #f0eeee;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+
+/* Fonts */
+
+@font-face {
+	font-family: "Code Bold";
+	src: url("fonts/CODEBold.otf");
+	src: url("fonts/CODEBold.otf") format("otf");
+}
+
+@font-face {
+	font-family: "Code Light";
+	src: url("fonts/CODEBold.otf");
+	src: url("fonts/CODEBold.otf") format("otf");
+}
+
+
+
+
+/* Nav Starts Here */
+
+
+/* Makes the background of the Navbar Transparent*/
+
+.navbar-default {
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+	text-align: center
+}
+
+ul {
+	font-size: 20px;
+	font-family: "Code Bold";
+}
+
+li {}
+
+
+}
+.active {}
+
+/* Adds color to the nav when hovering over. */
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	background-color: #D7CEC7;
+	color: black;
+	transition: color 0.1s ease-in-out;
+	transition: all 0.5s;
+}
+
+/* Nav Ends Here */
+
+
+
+.carousel-header, .carousel-text{
+
+    color: white;
+}
+
+
+
+
+	h1 {
+		font-size: 40px;
+		color: black;
+		text-align: center;
+		font-size: ;
+		font-family: "Code Light";
+	}
+	
+	h2 {
+		color: black;
+		text-align: center;
+		font-size: ;
+		font-family: "Code Light";
+	}
+
+
+
+
+h3{
+    text-align: center;
+    color: black;
+}
+
+
+	
+	.text {
+        
+		margin-top: 25px;
+	}
+	
+	p {
+		width: auto;
+		color: black;
+		vertical-align: middle;
+        padding-bottom: 25px;
+	}
+
+
+
+
+	/* Responsive Text*/
+	
+	@media screen and (max-width: 768px) {
+		h1 {
+			font-size: 22px;
+		}
+		img-responsive {
+			width: 30%;
+		}
+		p {
+
+        }
+
+
+        
+}
+	
+
+	
+	.footer {
+		text-align: center;
+		background-color: black;
+		position: relative;
+		bottom: 0;
+		width: 100%;
+		height: 100px;
+		/* Height of the footer */
+	}
+	
+	.text-muted {
+		text-align: center;
+		padding-top: 40px;
+	}
