@@ -5,7 +5,9 @@ body {
 	background-color: #f0eeee;
 }
 
+.container{
 
+}
 
 
 /* Fonts */
@@ -45,8 +47,7 @@ header{
 }
 
 
-.navbar-toggle 
-{
+.navbar-toggle {
     float:none;
 
 }   
@@ -126,7 +127,7 @@ p {
 /* Assignment Hover Box */
 img {
 	width: 100%;
-	height: ;
+	
 }
 
 .assignment-container {

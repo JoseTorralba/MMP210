@@ -1,7 +1,7 @@
 function setup() {
     var canvas = createCanvas(900, 500);
     canvas.parent('sketch-holder');
-    background('white');
+    background('#f0eeee');
 
     var black = color('black');
     var white = color('white');
