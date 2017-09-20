@@ -25,6 +25,13 @@ body {
 	src: url("fonts/CODEBold.otf") format("otf");
 }
 
+header {
+	text-align: center;
+	background-color: black;
+	border: solid;
+	border-right-style: none;
+	border-left-style: none;
+}
 
 
 
@@ -105,8 +112,8 @@ a:hover {
 
 
 h1 {
-	font-size: 40px;
-	color: black;
+	font-size: 60px;
+	color: white;
 	text-align: center;
 	font-size: ;
 	font-family: "Code Light";
