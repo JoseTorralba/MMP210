@@ -74,13 +74,13 @@ li {}
 
 /* Adds color to the nav when hovering over. */
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-	background-color: #D7CEC7;
-	color: black;
+	background-color: #B70123;
+	color: white;
 	transition: color 0.1s ease-in-out;
 	transition: all 0.5s;
 }
 a {
-	color: white;
+	color: black;
 	transition: color 0.1s ease-in-out;
 	transition: all 0.5s;
 }

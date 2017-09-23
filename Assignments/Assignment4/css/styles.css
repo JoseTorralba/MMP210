@@ -75,24 +75,22 @@ li {}
 
 }
 .active {
-
+    color: black;
 }
 
 /* Adds color to the nav when hovering over. */
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-	background-color: #D7CEC7;
-	color: black;
-	transition: color 0.1s ease-in-out;
-	transition: all 0.5s;
-}
-a {
+	background-color: #B70123;
 	color: white;
 	transition: color 0.1s ease-in-out;
 	transition: all 0.5s;
 }
-a:hover {
-	color: red;
+a {
+	color: black;
+	transition: color 0.1s ease-in-out;
+	transition: all 0.5s;
 }
+
 
 
 /* Nav Ends Here */
@@ -164,6 +162,28 @@ p {
 }      
 }
 	
+
+
+
+/* Link Back to Assignments */
+
+a:hover {
+    text-decoration: none;
+
+	color: #B70123;
+    
+}
+
+.return{
+    font-size: 25px;
+    font-family: "Code Bold";
+    text-decoration: none;
+    text-align: center;
+    
+}	
+
+
+
 
 .footer {
     text-align: center;

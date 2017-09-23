@@ -25,6 +25,7 @@ body {
 	src: url("fonts/CODEBold.otf") format("otf");
 }
 
+/* Header */
 header {
 	text-align: center;
 	background-color: black;
@@ -36,9 +37,6 @@ header {
 
 /* Nav Starts Here */
 
-
-/* Makes the background of the Navbar Transparent*/
-
 .navbar-default {
 	border-color: transparent;
 	background-color: transparent;
@@ -47,16 +45,13 @@ header {
 .navbar .navbar-nav {
     display: inline-block;
 	float: none;
-	
 }
 
 
 .navbar-toggle {
     float:none;
-
 }   
-.navbar-header
-{
+.navbar-header{
     text-align:center;
 }
 
@@ -71,7 +66,6 @@ ul {
 
 li {}
 
-
 }
 .active {
 
@@ -79,24 +73,20 @@ li {}
 
 /* Adds color to the nav when hovering over. */
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-	background-color: #D7CEC7;
-	color: black;
-	transition: color 0.1s ease-in-out;
-	transition: all 0.5s;
-}
-a {
+	background-color: #B70123;
 	color: white;
 	transition: color 0.1s ease-in-out;
 	transition: all 0.5s;
 }
-a:hover {
-	color: red;
+a {
+	color: black;
+	transition: color 0.1s ease-in-out;
+	transition: all 0.5s;
 }
 
-/* Nav Ends Here */
 
 
-
+/* Sketch Holder */
 
 
 #sketch-holder{
@@ -108,76 +98,93 @@ a:hover {
 
 
 
-	h1 {
+h1 {
 	font-size: 60px;
 	color: white;
 	text-align: center;
 	font-size: ;
 	font-family: "Code Light";
-	}
+}
 	
-	h2 {
-		color: black;
-		text-align: center;
-		font-size: ;
-		font-family: "Code Light";
-	}
-
-
-
-
-h3{
-    text-align: center;
+h2 {
     color: black;
+    text-align: center;
+    font-size: ;
+    font-family: "Code Light";
+}
+
+	
+.text {
+        
+    margin-top: 25px;
+}
+	
+p {
+    width: auto;
+    color: black;
+    vertical-align: middle;
+    padding-bottom: 25px;
 }
 
 
-	
-	.text {
-        
-		margin-top: 25px;
-	}
-	
-	p {
-		width: auto;
-		color: black;
-		vertical-align: middle;
-        padding-bottom: 25px;
-	}
+
+/* Link Back to Assignments */
+
+a:hover {
+    text-decoration: none;
+
+	color: #B70123;
+    
+}
+
+.return{
+    font-size: 25px;
+    font-family: "Code Bold";
+    text-decoration: none;
+    text-align: center;
+    
+}	
 
 
 
+/* Footer */
 
-	/* Responsive Text*/
-	
-	@media screen and (max-width: 768px) {
-		h1 {
-			font-size: 22px;
-		}
-		img-responsive {
-			width: 30%;
-		}
-		p {
-
-        }
-
-
-        
+.footer{
+    text-align: center;
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
 }
 	
+.text-muted{
+    color: azure;
+    text-align: center;
+    padding-top: 40px;
+}
 
+
+
+
+
+
+/* Responsive Text*/
 	
-	.footer {
-		text-align: center;
-		background-color: black;
-		position: relative;
-		bottom: 0;
-		width: 100%;
-		height: 100px;
-		/* Height of the footer */
-	}
-	
-	.text-muted {
-		text-align: center;
-		padding-top: 40px;
-	}
+@media screen and (max-width: 768px) {
+
+h1 {
+    font-size: 35px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+p{
+
+}
+
+
+        
+}/* Responsive ends here */

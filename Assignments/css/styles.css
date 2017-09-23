@@ -75,13 +75,13 @@ li {}
 
 /* Adds color to the nav when hovering over. */
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-	background-color: #D7CEC7;
-	color: black;
+	background-color: #B70123;
+	color: white;
 	transition: color 0.1s ease-in-out;
 	transition: all 0.5s;
 }
 a {
-	color: white;
+	color: black;
 	transition: color 0.1s ease-in-out;
 	transition: all 0.5s;
 }
@@ -112,16 +112,7 @@ p {
 	padding-bottom: 25px;
 }
 
-/* Responsive Text*/
-@media screen and (max-width: 768px) {
-	h1 {
-		font-size: 22px;
-	}
-	
-	p {
-}
-}
-/* Responsive Text Ends Here */
+
 
 
 /* Assignment Hover Box */
@@ -139,8 +130,9 @@ img {
 
 .assignment-hover a {
 	text-decoration: none;
-	color: #000;
+	color: azure;
 	position: relative;
+
 }
 
 .caption {
@@ -152,16 +144,21 @@ img {
 	position: absolute;
 	text-align: center;
 	top: 0;
-	font-size: 1.3em;
+	font-size: 1.6em;
 	display: block;
 	font-weight: bold;
-	font-family: ;
+	font-family: "Code Light" ;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	width: 100%;
+
+    background-color: #B70123;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .assignment-hover a .caption b {
+    font-family: "Code Bold";
 	font-size: 0.75em;
 	font-weight: lighter;
 	text-align: center;
@@ -177,11 +174,12 @@ img {
 }
 
 .assignment-hover a:hover img {
-	opacity: .2;
-	color:
+    
+	opacity: .3;
+	
 }
 
-/* Assignment Hover Ends */
+
 
 
 /* Footer */
@@ -201,4 +199,15 @@ img {
 	padding-top: 40px;
 }
 
-/* Footer Ends Here*/
+
+
+/* Responsive Text*/
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 22px;
+	}
+	
+	p {
+}
+}
+
