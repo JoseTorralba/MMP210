@@ -35,17 +35,41 @@ function draw() {
     var width11 = 70;
     var width12 = 75;
 
-    /* x/y var */
+    /* Width, Height and Radius for Rects Containing Instructions */
+    var whiteWidth = 400;
+    var whiteHeight = 100;
+    var blueWidth = 390;
+    var blueHeight = 90;
+    var boxRadius = 5;
 
-    /* Text Position/Size Var */
+    /* Text for Instructions, Classes, and Description */
+    var charSelect = 'Character Select';
+    var moveMouse = '(Move Mouse)';
+
+    var warrior = 'Warrior';
+    var warriorText1 = 'It takes quite a blow or spell to injure a well equipped warrior';
+    var warriorText2 = 'The warrior is best fit for swords, hammers and other large weapons';
+
+    var whiteMage = 'White Mage';
+    var whiteText1 = 'Although lacking in offensive power';
+    var whiteText2 = 'White Mages are valuable due to their healing abilities';
+
+    var blackMage = 'Black Mage';
+    var blackText1 = 'Black mages keep you sane when fighting groups of small enemies';
+    var blackText2 = 'With his multiple-target attack spells, you can win tough battles with ease';
+
+    var redMage = 'Red Mage';
+    var redText1 = 'Red Mages are capable of using both black and white magic';
+    var redText2 = 'They can also equip some heavy armor and some heavy weapons';
+    var redText3 = 'They are perfect for the all-around type people';
 
     /* Classes */
     textSize(30);
     fill(white);
-    text("Warrior", 170, 125);
-    text("White Mage", 600, 125);
-    text("Black Mage", 150, 370);
-    text("Red Mage", 600, 370);
+    text(warrior, 170, 125);
+    text(whiteMage, 600, 125);
+    text(blackMage, 150, 370);
+    text(redMage, 600, 370);
 
 	/* Quandrant */
 	strokeWeight(6);
@@ -137,9 +161,9 @@ function draw() {
         /* Red Mage Description */
         textSize(12);
         fill(white);
-        text('Red Mages are capable of using both black and white magic', 525, 390);
-        text('They can also equip some heavy armor and some heavy weapons', 505, 410);
-        text(' They are perfect for the all-around type people', 550, 430);
+        text(redText1, 525, 390);
+        text(redText2, 505, 410);
+        text(redText3, 550, 430);
 
     /* Bottom Left Quadrant */
 	} else if (mouseX < width/2 && mouseY > height/2) {
@@ -213,8 +237,8 @@ function draw() {
         /* Black Mage Description */
         textSize(12);
         fill(white);
-        text('Black mages keep you sane when fighting groups of small enemies', 45, 390);
-        text('With his multiple-target attack spells, you can win tough battles with ease', 30, 410);
+        text(blackText1, 45, 390);
+        text(blackText2, 30, 410);
 
     /* Upper Right Quadrant */
 	} else if (mouseX > width/2 && mouseY < height/2) {
@@ -322,8 +346,8 @@ function draw() {
         /* White Mage Description */
         textSize(12);
         fill(white);
-        text('Although lacking in offensive power', 580, 140);
-        text('White Mages are valuable due to their healing abilities', 530, 160);
+        text(whiteText1, 580, 140);
+        text(whiteText2, 530, 160);
 
     /* Upper Left Quadrant */
 	} else {
@@ -407,22 +431,22 @@ function draw() {
         /* Warrior Description */
         textSize(12);
         fill(white);
-        text('It takes quite a blow or spell to injure a well equipped warrior', 70, 140);
-        text('The warrior is best fit for swords, hammers and other large weapons', 45, 160);
+        text(warriorText1, 70, 140);
+        text(warriorText2, 45, 160);
 
-        /* else/if Ends Here */
+    /* else/if Ends Here */
 	}
 
     /* Instructions */
     fill(backgroundColor);
-    rect(250, 200, 400, 100, 5);
+    rect(250, 200, whiteWidth, whiteHeight, boxRadius);
     fill(blueBackground);
-    rect(255, 205, 390, 90, 5)
+    rect(255, 205, blueWidth, blueHeight, boxRadius)
 
     fill(white);
     textSize(40);
-    text('Character Select', 300, 250);
+    text(charSelect, 300, 250);
 
     textSize(20);
-    text('(Move Mouse)', 380, 280);
+    text(moveMouse, 380, 280);
 }
