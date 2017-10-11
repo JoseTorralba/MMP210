@@ -130,7 +130,6 @@ function draw() {
     rect(backgroundRect1.x, backgroundRect1.y, width, backgroundRect1.height);
     fill(black);
 
-
     /* Text Animation */
 
     textFont('Arial');

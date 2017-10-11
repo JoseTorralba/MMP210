@@ -9,22 +9,6 @@ body {
 
 }
 
-
-/* Fonts */
-
-@font-face {
-	font-family: "Code Bold";
-	src: url("fonts/CODEBold.otf");
-	src: url("fonts/CODEBold.otf") format("otf");
-}
-
-@font-face {
-	font-family: "Code Light";
-	src: url("fonts/CODEBold.otf");
-	src: url("fonts/CODEBold.otf") format("otf");
-}
-
-
 header{
     text-align: center;
     background-color: black;
@@ -51,8 +35,7 @@ header{
     float:none;
 
 }   
-.navbar-header
-{
+.navbar-header {
     text-align:center;
 }
 
@@ -61,8 +44,9 @@ header{
 }
 
 ul {
-	font-size: 20px;
-	font-family: "Code Bold";
+	font-size: 23px;
+    font-weight: bold;
+	font-family: 'Saira', sans-serif;
 }
 
 li {}
@@ -92,18 +76,18 @@ a:hover {
 /* Nav Ends Here */
 
 h1 {
-	font-size: 60px;
+	font-size: 90px;
 	color: white;
 	text-align: center;
-	font-size: ;
-	font-family: "Code Light";
+    font-weight: lighter;
+	font-family: 'Rajdhani', sans-serif;
 }
 h2 {
 	color: black;
 	text-align: center;
 	font-size: ;
-	font-family: "Code Light";
-	padding-bottom: 25px;
+    font-weight: bold;
+    font-family: 'Rajdhani', sans-serif;
 }
 p {
 	width: auto;
@@ -113,12 +97,9 @@ p {
 }
 
 
-
-
 /* Assignment Hover Box */
 img {
 	width: 100%;
-	
 }
 
 .assignment-container {
@@ -144,22 +125,21 @@ img {
 	position: absolute;
 	text-align: center;
 	top: 0;
-	font-size: 1.6em;
+	font-size: 23px;
 	display: block;
 	font-weight: bold;
-	font-family: "Code Light" ;
+	font-family: 'Saira', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	width: 100%;
-
     background-color: #B70123;
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
 .assignment-hover a .caption b {
-    font-family: "Code Bold";
-	font-size: 0.75em;
+    font-family: 'Saira', sans-serif;
+	font-size: 20px;
 	font-weight: lighter;
 	text-align: center;
 	text-transform: none;
@@ -178,8 +158,6 @@ img {
 	opacity: .3;
 	
 }
-
-
 
 
 /* Footer */
@@ -208,6 +186,5 @@ img {
 	}
 	
 	p {
+    }
 }
-}
-

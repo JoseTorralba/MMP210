@@ -11,19 +11,6 @@ body {
 }
 
 
-/* Fonts */
-
-@font-face {
-	font-family: "Code Bold";
-	src: url("fonts/CODEBold.otf");
-	src: url("fonts/CODEBold.otf") format("otf");
-}
-
-@font-face {
-	font-family: "Code Light";
-	src: url("fonts/CODEBold.otf");
-	src: url("fonts/CODEBold.otf") format("otf");
-}
 
 header {
 	text-align: center;
@@ -56,8 +43,7 @@ header {
     float:none;
 
 }   
-.navbar-header
-{
+.navbar-header {
     text-align:center;
 }
 
@@ -66,16 +52,14 @@ header {
 }
 
 ul {
-	font-size: 20px;
-	font-family: "Code Bold";
+	font-size: 23px;
+    font-weight: bold;
+	font-family: 'Saira', sans-serif;
 }
 
-li {}
 
-
-}
 .active {
-    color: black;
+
 }
 
 /* Adds color to the nav when hovering over. */
@@ -90,14 +74,11 @@ a {
 	transition: color 0.1s ease-in-out;
 	transition: all 0.5s;
 }
-
-
+a:hover {
+	color: red;
+}
 
 /* Nav Ends Here */
-
-
-
-
 
 #sketch-holder{
     background color: #D7CEC7;
@@ -105,24 +86,21 @@ a {
     padding-bottom: 20px;
 }
 
-
-
-
-
 h1 {
-	font-size: 60px;
+	font-size: 90px;
 	color: white;
 	text-align: center;
-	font-size: ;
-	font-family: "Code Light";
+    font-weight: lighter;
+	font-family: 'Rajdhani', sans-serif;
 }
 	
-	h2 {
-		color: black;
-		text-align: center;
-		font-size: ;
-		font-family: "Code Light";
-	}
+h2 {
+	color: black;
+	text-align: center;
+	font-size: ;
+    font-weight: bold;
+    font-family: 'Rajdhani', sans-serif;
+}
 
 
 
@@ -146,25 +124,6 @@ p {
 }
 
 
-
-
-/* Responsive Text*/
-	
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 22px;
-}
-    img-responsive {
-        width: 30%;
-}
-    p {
-
-}      
-}
-	
-
-
-
 /* Link Back to Assignments */
 
 a:hover {
@@ -175,14 +134,13 @@ a:hover {
 }
 
 .return{
-    font-size: 25px;
-    font-family: "Code Bold";
+    font-size: 30px;
+    font-weight: bold;
+	font-family: 'Rajdhani', sans-serif;
     text-decoration: none;
     text-align: center;
     
 }	
-
-
 
 
 .footer {
@@ -195,6 +153,26 @@ a:hover {
 }
 	
 .text-muted {
+    color: azure;
     text-align: center;
     padding-top: 40px;
 }
+
+
+
+
+
+/* Responsive Text*/
+	
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    img-responsive {
+        width: 30%;
+    }
+    p {
+
+    }      
+}
+	

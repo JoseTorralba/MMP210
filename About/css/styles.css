@@ -11,20 +11,6 @@ body {
 }
 
 
-/* Fonts */
-
-@font-face {
-	font-family: "Code Bold";
-	src: url("fonts/CODEBold.otf");
-	src: url("fonts/CODEBold.otf") format("otf");
-}
-
-@font-face {
-	font-family: "Code Light";
-	src: url("fonts/CODEBold.otf");
-	src: url("fonts/CODEBold.otf") format("otf");
-}
-
 header {
 	text-align: center;
 	background-color: black;
@@ -33,9 +19,7 @@ header {
 	border-left-style: none;
 }
 
-
 /* Nav Starts Here */
-
 
 /* Makes the background of the Navbar Transparent*/
 
@@ -62,28 +46,26 @@ header {
 }
 
 ul {
-	font-size: 20px;
-	font-family: "Code Bold";
+	font-size: 23px;
+    font-weight: bold;
+	font-family: 'Saira', sans-serif;
 }
-
-li {}
-
-
-}
-.active {}
 
 /* Adds color to the nav when hovering over. */
+
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 	background-color: #B70123;
 	color: white;
 	transition: color 0.1s ease-in-out;
 	transition: all 0.5s;
 }
+
 a {
 	color: black;
 	transition: color 0.1s ease-in-out;
 	transition: all 0.5s;
 }
+
 a:hover {
 	color: red;
 }
@@ -91,27 +73,55 @@ a:hover {
 /* Nav Ends Here */
 
 h1 {
-	font-size: 60px;
+	font-size: 90px;
 	color: white;
 	text-align: center;
-	font-size: ;
-	font-family: "Code Light";
+    font-weight: lighter;
+	font-family: 'Rajdhani', sans-serif;
 }
+
 h2 {
 	color: black;
 	text-align: center;
 	font-size: ;
-	font-family: "Code Light";
+        font-family: 'Rajdhani', sans-serif;
 }
+
 .text {
 	margin-top: 25px;
 }
+
 p {
 	width: auto;
 	color: black;
 	vertical-align: middle;
 	padding-bottom: 30px;
 }
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 40px;
+	width: 400px;
+}
+
+.footer {
+	text-align: center;
+	background-color: black;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+}
+
+.text-muted {
+    color: azure;
+	text-align: center;
+	padding-top: 40px;
+}
+
+
 
 
 /* Responsive Text*/
@@ -128,28 +138,4 @@ p {
 	p {}
 	
 	img {}
-}
-
-
-
-
-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 40px;
-	width: 400px;
-}
-.footer {
-	text-align: center;
-	background-color: black;
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	height: 100px;
-	/* Height of the footer */
-}
-.text-muted {
-	text-align: center;
-	padding-top: 40px;
 }

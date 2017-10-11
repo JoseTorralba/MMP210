@@ -11,19 +11,6 @@ body {
 }
 
 
-/* Fonts */
-
-@font-face {
-	font-family: "Code Bold";
-	src: url("fonts/CODEBold.otf");
-	src: url("fonts/CODEBold.otf") format("otf");
-}
-
-@font-face {
-	font-family: "Code Light";
-	src: url("fonts/CODEBold.otf");
-	src: url("fonts/CODEBold.otf") format("otf");
-}
 
 header {
 	text-align: center;
@@ -66,14 +53,12 @@ header {
 }
 
 ul {
-	font-size: 20px;
-	font-family: "Code Bold";
+	font-size: 23px;
+    font-weight: bold;
+	font-family: 'Saira', sans-serif;
 }
 
-li {}
 
-
-}
 .active {
 
 }
@@ -111,18 +96,19 @@ a:hover {
 
 
 h1 {
-	font-size: 60px;
+	font-size: 90px;
 	color: white;
 	text-align: center;
-	font-size: ;
-	font-family: "Code Light";
+    font-weight: lighter;
+	font-family: 'Rajdhani', sans-serif;
 }
 	
 	h2 {
 		color: black;
 		text-align: center;
 		font-size: ;
-		font-family: "Code Light";
+        font-weight: bold;
+        font-family: 'Rajdhani', sans-serif;
 	}
 
 
@@ -146,26 +132,6 @@ p {
     padding-bottom: 25px;
 }
 
-
-
-
-/* Responsive Text*/
-	
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 22px;
-}
-    img-responsive {
-        width: 30%;
-}
-    p {
-
-}      
-}
-	
-
-
-
 /* Link Back to Assignments */
 
 a:hover {
@@ -176,15 +142,13 @@ a:hover {
 }
 
 .return{
-    font-size: 25px;
-    font-family: "Code Bold";
+    font-size: 30px;
+    font-weight: bold;
+	font-family: 'Rajdhani', sans-serif;
     text-decoration: none;
     text-align: center;
     
 }	
-
-
-
 
 
 .footer {
@@ -197,6 +161,21 @@ a:hover {
 }
 	
 .text-muted {
+    color: azure;
     text-align: center;
     padding-top: 40px;
+}
+
+/* Responsive Text*/
+	
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    img-responsive {
+        width: 30%;
+    }
+    p {
+
+    }      
 }
