@@ -131,11 +131,11 @@ img {
 		font-size: 22px;
 	}
 	
-	img-responsive {
-		width: 30%;
-	}
+	p {
+    
+    }
 	
-	p {}
-	
-	img {}
+	img {
+        width: 100%;
+    }
 }
