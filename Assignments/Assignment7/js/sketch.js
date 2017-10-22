@@ -118,6 +118,8 @@ function draw() {
         height: 1
     };
 
+
+        
     /* Curtain Color */
     fill(blue);
 
