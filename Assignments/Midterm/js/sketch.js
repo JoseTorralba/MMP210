@@ -5,8 +5,6 @@ function setup() {
 }
 function design() {
 
-  //  var backgroundColor = color('#f0eeee');
-
     background('#00CC00');
 
     var ornamentCap = {
@@ -38,6 +36,28 @@ function design() {
         diameter: 4,
         xOffset: 5,
         yOffset: 20
+    };
+
+    var snowmanHat1 = {
+        xOffset: 15,
+        yOffset: 27,
+        width: 30,
+        height: 5,
+        radius: 5
+    };
+
+     var snowmanHat2 = {
+        xOffset: 10,
+        yOffset: 40,
+        width: 20,
+        height: 15
+    };
+
+    var hatColor = {
+        xOffset: 10,
+        yOffset: 30,
+        width: 20,
+        height: 3
     };
 
     var gingerbreadHead = {
@@ -86,9 +106,8 @@ function design() {
         radius: 2
     };
 
-    var columnNum = 40;
-    var rowNum = 30;
     var columnSize = 60;
+
     var rowSize = 60;
             
     var outcome = random(4);
@@ -119,6 +138,10 @@ function design() {
 
             } else if (outcome < 2) {
 
+                var r = random(255, 150);
+                var g = random(255, 80);
+                var b = random(255, 60);
+
                 /* Snowman Body */
                 fill('white');
                 noStroke();
@@ -130,14 +153,18 @@ function design() {
                 ellipse(x - snowmanEyes.xOffset, y - snowmanEyes.yOffset, snowmanEyes.diameter);    // Left Eye
                 ellipse(x + snowmanEyes.xOffset, y - snowmanEyes.yOffset, snowmanEyes.diameter);    // Right Eye
 
-                //Will Add a Hat to show that it's changing
+                /* Snowman Hat */
+                rect(x - snowmanHat1.xOffset, y - snowmanHat1.yOffset, snowmanHat1.width, snowmanHat1.height, snowmanHat1.radius);
+                rect(x - snowmanHat2.xOffset, y - snowmanHat2.yOffset, snowmanHat2.width, snowmanHat2.height);
+
+                /* Snowman Hat Color */
+                fill(r, g, b);
+                rect(x - hatColor.xOffset, y - hatColor.yOffset, hatColor.width, hatColor.height);
 
             } else if (outcome < 3) {
 
-                // Still working on color!!
-
-                var r = random(255, 238);
-                var g = random(255, 10);
+                var r = random(255, 240);
+                var g = random(255, 100);
                 var b = random(0, 14);
 
                 /* Ginger Bread Head */
@@ -156,9 +183,9 @@ function design() {
 
             } else {
 
-                var r = random(155, 255);
-                var g = random(10, 50);
-                var b = random(100, 50);
+                var r = random(255, 150);
+                var g = random(55, 50);
+                var b = random(255, 10);
 
                 /* Christmas Present */
                 fill(r, g, b);
@@ -176,7 +203,6 @@ function design() {
                 /* Shadow */
                 fill(0, 40);
                 rect(x - presentShadow.xOffset, y + presentShadow.yOffset, presentShadow.width, presentShadow.height, presentShadow.radius);
-
             }
         } // for var (y)
     } // for var (x)
