@@ -105,10 +105,17 @@ h3 {
 p {
 	width: auto;
 	color: black;
-	vertical-align: middle;
+    text-align: center;
 	padding-bottom: 25px;
 }
 
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 30%;
+}
 
 /* Link Back to Assignments */
 
@@ -147,8 +154,8 @@ a:hover {
 	h1 {
 		font-size: 40px;
 	}
-	img-responsive {
-		width: 30%;
+	img {
+		width: 70%;
 	}
 	p {
     }

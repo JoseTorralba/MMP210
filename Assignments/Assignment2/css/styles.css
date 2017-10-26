@@ -127,12 +127,18 @@ p {
     h1 {
         font-size: 40px;
 }
-    img-responsive {
-        width: 30%;
+    img {
+
 }
     p {
 
 }      
+
+    .leftside-text{
+        padding-top: 10px;
+}
+
+
 }
 	
 /* Responsive sketch */
@@ -176,4 +182,19 @@ a:hover {
     color: azure;
     text-align: center;
     padding-top: 40px;
+}
+
+
+
+
+.leftside-text{
+    padding-top: 30px;
+}
+
+.img-responsive{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 100%;
 }

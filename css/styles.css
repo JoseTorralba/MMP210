@@ -20,8 +20,6 @@ header {
 
 /* Nav Starts Here */
 
-/* Makes the background of the Navbar Transparent*/
-
 .navbar-default {
 	border-color: transparent;
 	background-color: transparent;
@@ -71,9 +69,7 @@ a:hover {
 
 /* Nav Ends Here */
 
-.carousel-header, .carousel-text {
-	color: aqua;
-}
+
 
 img {
 	width: 60%;
@@ -116,7 +112,7 @@ p {
 	width: auto;
 	color: black;
 	vertical-align: middle;
-	padding-bottom: 25px;
+	padding-bottom: 10px;
 }
 
 .footer {
@@ -138,12 +134,94 @@ p {
 /* Responsive Text*/
 @media screen and (max-width: 768px) {
 	h1 {
-		font-size: 22px;
+		font-size: 45px;
 	}
 	
-	img-responsive {
-		width: 30%;
+.item img {
+		width: 400%;
 	}
 	
 	p {}
+
+
+
+    .carousel-caption{
+        background: rgba(0, 0, 0, 0.35);
+        border-radius: 4px;
+
+    }
+
+
+    .carousel-header {
+        color: white;
+        font-size: 20px;
+    }
+
+
+
+
+
+    .carousel-text {
+        color: white;
+        font-size: 15px;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/*Carousel*/
+.item img {
+  width: 60%;
+  height: auto;
+}
+
+
+
+
+
+a.carousel-control{
+
+background: none;
+color: red;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+
+
+
+
+.carousel-indicators li{
+    background-color: red;
+    width: 15px;
+    height: 5px !important;
+    border-radius: 3px !important;
+}
+
+
+
+
+
+
+.carousel-caption{
+    background: rgba(0, 0, 0, 0.35);
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 4px;
+}
+
+
+.carousel-header, .carousel-text {
+	color: white;
 }

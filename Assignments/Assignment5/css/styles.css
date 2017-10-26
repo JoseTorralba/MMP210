@@ -155,7 +155,13 @@ a:hover {
 
 
 
-
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 60%;
+}
 
 /* Responsive Text*/
 	
@@ -163,8 +169,8 @@ a:hover {
     h1 {
         font-size: 40px;
     }
-    img-responsive {
-        width: 30%;
+    img {
+        width: 100%;
     }
     p {
 
