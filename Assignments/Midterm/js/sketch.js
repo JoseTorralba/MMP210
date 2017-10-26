@@ -129,10 +129,24 @@ function design() {
         radius: 2
     };
 
-     var presentRibbon = {
+    var presentRibbon = {
         xOffset: 7.5,
         width: 15,
         height: 30
+    };
+
+    var ribbonKnot1 = {
+        xOffset: 8,
+        yOffset: 3,
+        width: 15,
+        height: 10
+    };
+
+    var ribbonKnot2 = {
+        xOffset: 21, 
+        yOffset: 3,
+        width: 15,
+        height: 10
     };
 
      var presentShadow = {
@@ -261,6 +275,10 @@ function design() {
                 /* Ribbon */
                 fill(yellow);
                 rect(x + presentRibbon.xOffset, y, presentRibbon.width, presentRibbon.height);
+
+                /* Ribbon Knot*/
+                ellipse(x + ribbonKnot1.xOffset, y - ribbonKnot1.yOffset, ribbonKnot1.width, ribbonKnot1.height);   // Left
+                ellipse(x + ribbonKnot2.xOffset, y - ribbonKnot2.yOffset, ribbonKnot2.width, ribbonKnot2.height)    // Right
 
                 /* Shadow */
                 fill(shadow);
