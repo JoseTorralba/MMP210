@@ -1,4 +1,4 @@
-body {
+ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -165,4 +165,12 @@ a:hover {
     p {
 
     }      
+}
+
+/* Responsive sketch */
+#defaultCanvas0 {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
 }

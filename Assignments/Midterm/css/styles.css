@@ -34,7 +34,6 @@ header {
 	
 }
 
-
 .navbar-toggle {
     float:none;
 
@@ -76,11 +75,7 @@ a:hover {
 
 /* Nav Ends Here */
 
-#sketch-holder{
-    background color: #D7CEC7;
-    text-align: center;
-    padding-bottom: 20px;
-}
+
 
 h1 {
 	font-size: 90px;
@@ -138,7 +133,6 @@ a:hover {
     
 }	
 
-
 .footer {
     text-align: center;
     background-color: black;
@@ -154,9 +148,6 @@ a:hover {
     padding-top: 40px;
 }
 
-
-
-
 /* Responsive Text*/
 	
 @media screen and (max-width: 768px) {
@@ -169,5 +160,14 @@ a:hover {
     p {
 
     }      
+
 }
-	
+
+/* Responsive sketch */
+#defaultCanvas0 {
+    background color: #D7CEC7;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}

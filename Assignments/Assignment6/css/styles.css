@@ -76,11 +76,6 @@ a:hover {
 
 /* Nav Ends Here */
 
-#sketch-holder{
-    background color: #D7CEC7;
-    text-align: center;
-    padding-bottom: 20px;
-}
 
 h1 {
 	font-size: 90px;
@@ -171,3 +166,10 @@ a:hover {
     }      
 }
 	
+/* Responsive sketch */
+#defaultCanvas0 {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}

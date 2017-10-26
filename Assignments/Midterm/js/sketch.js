@@ -4,8 +4,18 @@ function setup() {
     design();
 }
 function design() {
-
     background('#00CC00');
+
+    var white = color('white');
+    var black = color('black');
+    var gray = color('gray');
+    var red = color('red');
+    var orange = color('orange');
+    var yellow = color('#fdd340');
+    var pink = color('pink');
+    var breadBrown = color('#A38427');
+    var shadow = color(0, 40);
+    var shine = color(255, 140);
 
     var ornamentCap = {
         diameter: 20,
@@ -21,6 +31,13 @@ function design() {
 
     var ornament = {
         diameter: 30
+    };
+
+    var ornamentShine = {
+        xOffset: 1,
+        yOffset: 9,
+        width: 17,
+        height: 9
     };
 
     var snowmanHead = {
@@ -46,7 +63,7 @@ function design() {
         radius: 5
     };
 
-     var snowmanHat2 = {
+    var snowmanHat2 = {
         xOffset: 10,
         yOffset: 40,
         width: 20,
@@ -55,27 +72,48 @@ function design() {
 
     var hatColor = {
         xOffset: 10,
-        yOffset: 30,
+        yOffset: 32,
         width: 20,
-        height: 3
+        height: 5
+    };
+
+    var snowmanButtons = {
+        yOffset: 3,
+        diameter: 3
+    };
+
+    var snowmanNose = {
+        yOffset: 15,
+        diameter: 4
     };
 
     var gingerbreadHead = {
-        diameter: 30,
+        diameter: 30
     };
 
     var gingerbreadEyes = {
         diameter: 5,
         xOffset: 6,
-        yOffset: 2
+        yOffset: 3
+    };
+
+    var gingerbreadPupils = {
+        diameter: 2,
+        xOffset: 6,
+        yOffset: 3
+    };
+
+    var gingerbreadBlush = {
+        diameter: 3,
+        xOffset: 10,
+        yOffset: 3
     };
 
     var gingerbreadMouth = {
-        xOffset: 5,
-        yOffset: 3,
-        width: 10,
-        height: 5,
-        radius: 14
+        yOffset: 4,
+        width: 15,
+        height: 15,
+        thing: 14
     };
 
     var christmasPresent = {
@@ -94,8 +132,7 @@ function design() {
      var presentRibbon = {
         xOffset: 7.5,
         width: 15,
-        height: 30,
-
+        height: 30
     };
 
      var presentShadow = {
@@ -104,7 +141,8 @@ function design() {
         width: 38,
         height: 5,
         radius: 2
-    };
+     };
+
 
     var columnSize = 60;
 
@@ -123,18 +161,22 @@ function design() {
 
                 /* Ornament Cap */
                 noStroke();
-                fill('gray');
+                fill(gray);
                 ellipse(x - ornamentCap.xOffset, y - ornamentCap.yOffset, ornamentCap.diameter);
 
                 /* Ornament Hanger */
                 noFill();
-                stroke('gray');
+                stroke(gray);
                 ellipse(x - ornamentHanger.offSet, y - ornamentHanger.offSet, ornamentHanger.width, ornamentHanger.height);
 
                 /* Ornament */
                 fill(r, g ,b);
                 noStroke();
                 ellipse(x, y, ornament.diameter);
+
+                /* Ornament Shine */
+                fill(shine);
+                ellipse(x + ornamentShine.xOffset, y + ornamentShine.yOffset, ornamentShine.width, ornamentShine.height);
 
             } else if (outcome < 2) {
 
@@ -143,13 +185,13 @@ function design() {
                 var b = random(255, 60);
 
                 /* Snowman Body */
-                fill('white');
+                fill(white);
                 noStroke();
                 ellipse(x, y - snowmanHead.yOffset, snowmanHead.diameter);
                 ellipse(x, y, snowmanBody.diameter);
 
                 /* Snowman Eyes*/
-                fill('black');
+                fill(black);
                 ellipse(x - snowmanEyes.xOffset, y - snowmanEyes.yOffset, snowmanEyes.diameter);    // Left Eye
                 ellipse(x + snowmanEyes.xOffset, y - snowmanEyes.yOffset, snowmanEyes.diameter);    // Right Eye
 
@@ -157,29 +199,49 @@ function design() {
                 rect(x - snowmanHat1.xOffset, y - snowmanHat1.yOffset, snowmanHat1.width, snowmanHat1.height, snowmanHat1.radius);
                 rect(x - snowmanHat2.xOffset, y - snowmanHat2.yOffset, snowmanHat2.width, snowmanHat2.height);
 
+                /* Snowman Buttons */
+                ellipse(x, y - snowmanButtons.yOffset, snowmanButtons.diameter);
+                ellipse(x, y + snowmanButtons.yOffset, snowmanButtons.diameter);
+
+                /* Snowman Nose */
+                fill(orange);
+                ellipse(x, y - snowmanNose.yOffset, snowmanNose.diameter);
+
                 /* Snowman Hat Color */
                 fill(r, g, b);
                 rect(x - hatColor.xOffset, y - hatColor.yOffset, hatColor.width, hatColor.height);
 
             } else if (outcome < 3) {
 
-                var r = random(255, 240);
-                var g = random(255, 100);
-                var b = random(0, 14);
+                var r = random(255, 250);
+                var g = random(255, 80);
+                var b = random(255, 160);
 
                 /* Ginger Bread Head */
-                fill(r, g, b);
+                fill(breadBrown);
                 noStroke();
                 ellipse(x, y, gingerbreadHead.diameter);
 
                 /* Ginger Bread Eyes */
-                fill('black')
+                fill(white)
                 ellipse(x - gingerbreadEyes.xOffset, y - gingerbreadEyes.yOffset, gingerbreadEyes.diameter);    // Left
                 ellipse(x + gingerbreadEyes.xOffset, y - gingerbreadEyes.yOffset , gingerbreadEyes.diameter);   // Right
 
+                /* Ginger Bread Pupils */
+
+                fill(black)
+                ellipse(x - gingerbreadPupils.xOffset, y - gingerbreadPupils.yOffset, gingerbreadPupils.diameter);  // Left
+                ellipse(x + gingerbreadPupils.xOffset, y - gingerbreadPupils.yOffset, gingerbreadPupils.diameter);  // Right
+
+                /* Ginger Bread Blush */
+                fill(pink);
+                ellipse(x - gingerbreadBlush.xOffset, y + gingerbreadBlush.yOffset, gingerbreadBlush.diameter);     // Left
+                ellipse(x + gingerbreadBlush.xOffset, y + gingerbreadBlush.yOffset, gingerbreadBlush.diameter);     // Right
+
                 /* Ginger Bread Mouth */
-                fill('red');
-                rect(x - gingerbreadMouth.xOffset, y + gingerbreadMouth.yOffset, gingerbreadMouth.width, gingerbreadMouth.height, gingerbreadMouth.radius);
+                fill(r, g, b);
+                stroke(red);
+                arc(x, y + gingerbreadMouth.yOffset, gingerbreadMouth.width, gingerbreadMouth.height, 0, PI, CHORD);
 
             } else {
 
@@ -193,17 +255,17 @@ function design() {
                 rect(x, y, christmasPresent.width, christmasPresent.height, christmasPresent.radius);
 
                 /* Present Top */
-                fill('white')
+                fill(white)
                 rect(x - presentTop.xOffset, y, presentTop.width, presentTop.height, presentTop.radius);
 
                 /* Ribbon */
-                fill('#fdd340');
+                fill(yellow);
                 rect(x + presentRibbon.xOffset, y, presentRibbon.width, presentRibbon.height);
 
                 /* Shadow */
-                fill(0, 40);
+                fill(shadow);
                 rect(x - presentShadow.xOffset, y + presentShadow.yOffset, presentShadow.width, presentShadow.height, presentShadow.radius);
-            }
+            } // Else & If Statements
         } // for var (y)
     } // for var (x)
 }
