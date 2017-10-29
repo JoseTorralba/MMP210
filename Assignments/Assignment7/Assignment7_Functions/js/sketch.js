@@ -90,7 +90,7 @@ function myWindow(x, y, w, h, m) {
          w / 2 - m / 2,
          h - m / 2);
 
-    /* Bottom of Window - work on */
+    /* Bottom of Window */
     fill('black');
     rect(x - m / 2,
          y + h * 2,
