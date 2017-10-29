@@ -174,7 +174,12 @@ img{
     }
     p {
 
-    }      
+    }   
+
+    .return {
+        font-size: 20px;
+    }
+   
 }
 
 /* Responsive sketch */

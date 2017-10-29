@@ -109,11 +109,24 @@ h3 {
 }
 
 p {
+    text-align: center;
 	width: auto;
 	color: black;
-	vertical-align: middle;
 	padding-bottom: 10px;
 }
+
+
+
+.link{
+
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    
+}	
+
+
+
 
 .footer {
 	text-align: center;
@@ -137,11 +150,13 @@ p {
 		font-size: 45px;
 	}
 	
-.item img {
+    .item img {
 		width: 400%;
 	}
 	
-	p {}
+	p {
+        text-align: center;
+    }
 
 
 
