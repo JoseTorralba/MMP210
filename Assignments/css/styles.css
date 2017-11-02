@@ -53,8 +53,11 @@ li {}
 
 
 }
-.active {
 
+
+
+.active {
+    
 }
 
 /* Adds color to the nav when hovering over. */
@@ -70,8 +73,11 @@ a {
 	transition: all 0.5s;
 }
 a:hover {
-	color: red;
+	color: #B70123;
+    text-decoration: none;
 }
+
+
 
 /* Nav Ends Here */
 
@@ -88,6 +94,7 @@ h2 {
 	font-size: ;
     font-weight: bold;
     font-family: 'Rajdhani', sans-serif;
+    padding-bottom: 20px;
 }
 p {
 	width: auto;
@@ -95,6 +102,7 @@ p {
 	vertical-align: middle;
 	padding-bottom: 25px;
 }
+
 
 
 /* Assignment Hover Box */
@@ -158,6 +166,24 @@ img {
 	opacity: .3;
 	
 }
+
+
+/* Centers Final */
+
+.center{
+    float: none;
+    margin: 0 auto;
+}
+
+
+.back-top{
+
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+
+    
+}	
 
 
 /* Footer */
