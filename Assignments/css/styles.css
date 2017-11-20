@@ -1,23 +1,23 @@
 body {
 	margin: 0;
 	padding: 0;
+    width: 100%;
 	height: 100%;
-	background-color: #f0eeee;
+	background-color: #fff;
 }
 
-.container{
 
+.container {
+	width: 100%;
+	margin: 0 auto;
 }
 
-header{
-    text-align: center;
-    background-color: black;
-    border: solid;
-    border-right-style:none;
-    border-left-style:none;
-}
 
-/* Nav Starts Here */
+/* 
+=============================================
+Navigation
+=============================================
+*/
 
 .navbar-default {
 	border-color: transparent;
@@ -25,61 +25,82 @@ header{
 }
 
 .navbar .navbar-nav {
-    display: inline-block;
-	float: none;
-	
+	display: inline-block;
+	float: right;
 }
 
+.navbar-brand{
+    
+    font-weight: 400;
+    transition: 1s;
+    font-size: 30px;
+}
+
+#nav-name{
+
+    color: black;
+
+}
 
 .navbar-toggle {
-    float:none;
+	float: right;
+}
 
-}   
 .navbar-header {
-    text-align:center;
+	text-align: center;
 }
 
 .navbar .navbar-collapse {
 	text-align: center;
 }
 
+
 ul {
-	font-size: 23px;
-    font-weight: bold;
+    
+	font-size: 20px;
+	font-weight: bold;
 	font-family: 'Saira', sans-serif;
-}
-
-li {}
-
-
-}
-
-
-
-.active {
     
 }
 
-/* Adds color to the nav when hovering over. */
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 	background-color: #B70123;
 	color: white;
 	transition: color 0.1s ease-in-out;
 	transition: all 0.5s;
 }
+
 a {
 	color: black;
 	transition: color 0.1s ease-in-out;
 	transition: all 0.5s;
 }
+
 a:hover {
-	color: #B70123;
+	color: red;
     text-decoration: none;
 }
 
+/* 
+=============================================
+Header Image
+=============================================
+*/
+
+.header {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  background: url('../../img/temp.jpg') ,rgba(0,0,0, .5);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
 
 
-/* Nav Ends Here */
+/**/
 
 h1 {
 	font-size: 90px;
@@ -105,12 +126,17 @@ p {
 
 
 
-/* Assignment Hover Box */
+/* 
+=============================================
+Assignment Container
+=============================================
+*/
 img {
 	width: 100%;
 }
 
 .assignment-container {
+    padding-top: 2em;
 }
 
 .assignment-hover {
@@ -167,8 +193,12 @@ img {
 	
 }
 
+/* 
+=============================================
+Centers Final Assignment
+=============================================
+*/
 
-/* Centers Final */
 
 .center{
     float: none;
@@ -185,8 +215,12 @@ img {
     
 }	
 
+/* 
+=============================================
+Footer
+=============================================
+*/
 
-/* Footer */
 
 .footer {
 	text-align: center;
