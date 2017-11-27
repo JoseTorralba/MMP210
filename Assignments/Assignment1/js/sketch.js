@@ -7,7 +7,7 @@ function setup() {
 
 function draw() {
 
-    background('#f0eeee');
+    background('white');
 
 /* Body */
     

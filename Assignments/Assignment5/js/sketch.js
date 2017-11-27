@@ -7,7 +7,7 @@ function draw() {
 	background("black");
     
 	/* Colors */
-    var backgroundColor = color('#f0eeee');
+    var backgroundColor = color('#fff');
     var blueBackground = color('#3838d8');
     var black = color('black');
     var white = color('white');

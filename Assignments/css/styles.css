@@ -7,7 +7,7 @@ body {
 }
 
 
-.container {
+.container-fluid {
 	width: 100%;
 	margin: 0 auto;
 }
@@ -135,8 +135,18 @@ img {
 	width: 100%;
 }
 
+#assignments {
+
+    margin: auto;
+    width: 80%;
+/*    border: 3px solid red;*/
+
+}
+
 .assignment-container {
+
     padding-top: 2em;
+
 }
 
 .assignment-hover {
@@ -247,4 +257,14 @@ Footer
 	
 	p {
     }
+
+
+#assignments {
+
+    margin: auto;
+    width: 80%;
+    border: 3px solid green;
+
+}
+
 }

@@ -21,7 +21,7 @@ function setup() {
     canvas.parent('sketch-holder');
 }
 function draw() {
-    var backgroundColor = color('#f0eeee');
+    var backgroundColor = color('white');
     var black = color('black');
     var white = color('white');
     var red = color('red');

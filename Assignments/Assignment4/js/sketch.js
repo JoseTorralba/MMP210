@@ -1,7 +1,7 @@
 function setup() {
     var canvas = createCanvas(900, 500);
     canvas.parent('sketch-holder');
-    background('#f0eeee');
+    background('#fff');
     noCursor();
 }
 
@@ -120,6 +120,6 @@ function draw() {
 
 function keyPressed() {
 
-    var sketchBackground = color ('#f0eeee')
+    var sketchBackground = color ('#fff')
 	background(sketchBackground);
 }
