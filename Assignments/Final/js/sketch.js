@@ -159,5 +159,5 @@ function setup() {
     textSize(25);
 	text(hiragana, 450, 120, 450, 300);
 
-
+    text("Phrases", 450, 450);
 }
