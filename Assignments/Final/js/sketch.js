@@ -130,20 +130,20 @@ const characters = [
 const buttons = [];
 
 function setup() {
-    var canvas = createCanvas(900, 800);
-    canvas.parent('sketch-holder');
+createCanvas(1400, 800);
+
     background(220);
 
-    var x = 300;
-    var y = 400;
+    var x = 50;
+    var y = 275;
     for (let i = 0; i < characters.length; i++){
         
 
         buttons[i] = new Button(characters[i], x, y, audio[i]);
         x += 70;
 
-        if (x > 600) {
-            x = 300;
+        if (x > 350) {
+            x = 50;
             y += 50;
         }
 
