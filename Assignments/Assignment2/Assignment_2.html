@@ -4,98 +4,62 @@
 	<meta charset="utf-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<title>MMP 210 Homepage</title>
-	<link href="../../Bootstrap/css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap CSS -->
-
+	<title>MMP 210 | Assignment #1</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
-
-	<link href="../../animsition/css/animsition.min.css" rel="stylesheet"><!-- Animsition CSS -->
-	<link href="css/styles.css" rel="stylesheet"><!-- My Css -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <!-- Animsition CSS -->
+	<link href="../../animsition/css/animsition.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+	<link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-	<header>
-		<h1>Welcome to MMP 210</h1>
-	</header>
+    <div class="animsition">
+        <nav id="mainNav" class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand animsition-link" href="../../index.html">Jose Torralba</a> <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link animsition-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animsition-link active" href="../assignments.html">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animsition-link" href="../../About/about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Assignment 2: Variables</h1>
 
-
-	<div class="animsition">
-		<div class="container">
-			<nav class="navbar navbar-default">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
-					</div><!-- Navbar Header-->
-
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-
-							<li>
-								<a class="animsition-link" href="../../index.html">Home</a>
-							</li>
-
-
-							<li class="active">
-								<a class="animsition-link" href="../assignments.html">Assignments<span class="sr-only">(current)</span></a>
-							</li>
-
-							<li>
-								<a class="animsition-link" href="../../About/about.html">About</a>
-							</li>
-
-						</ul>
-					</div><!-- /.navbar-collapse -->
-				</div><!-- /.container-fluid -->
-			</nav>
-
-
-			<h2>Assignment 2: Variables</h2>
-
-
-			<div class="text">
-				<div id="sketch-holder">
-
-					<!-- Sketch goes in here -->
-
-				</div><!-- Sketch Holder Ends Here -->
-
-				<h2>Description</h2>
-
-				<p>For this assignment we had to do our self portrait again but this time using variables. I decided to pick one of my favorite activities to use for the assignment instead. My favorite activity involved playing video games. We had to use variables this time instead of hardcoded values to get used to on how p5 Javascript works.</p>
-
-
-				<div class="row">
-					<div class="col-md-6">
-						<p class="leftside-text">The first thing my friends pointed out when seeing this assignment was the pixel art on the TV. I was questioned about it if I used an image or found a code to it online and pasted it onto my sketch. I did the image with just rects and used the image on the side as reference, I didn't do the full character since it would have taken me a while to finish.  As for the the library of games, I used my PS4, my games and TV as reference and made them with rects, an ellipse and a quad. Since I wanted to put in text on the spine of the games, I went ahead and learned how to use the text and rotate function to make the assignment look like the way I wanted it to look. Out of everything on this sketch, the pixel art took me the longest to do.</p>
-					</div>
-
-					<div class="col-md-4 col-md-6"><img alt="Sora CoM" class="img-responsive" src="img/sora_com.gif">
-					</div>
-				</div>
-
-               <p class="return"><a class="animsition-link" href="../assignments.html">Return to Assignments</a></p>
-                
-			</div><!-- Text Ends Here -->
-
-		</div><!-- /.container -->
-
-        <div class="footer">
-            <footer class="footer">
-                <div class="container">
-                    <p class="text-muted">Designed by Jose &copy; 2017</p>
-                </div>
-            </footer>
+        <div class="container">
+            <div id="sketch-holder">
+                <!-- Sketch goes in here -->
+            </div>
         </div>
 
-        <script src="js/p5.min.js"></script><!-- For Sketch -->
-        <script src="js/sketch.js"></script> <!-- Sketch -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!-- jQuery -->
-		<script src="../../Bootstrap/js/bootstrap.min.js"></script><!-- Bootstrap js -->
-		<script src="../../animsition/js/animsition.min.js"></script><!-- Animsition js --> 
-		<script src="../../animsition/js/fade.js"></script><!-- Calls Fade Animsition -->
+        <footer>
+            <div class="row text-center">
+                <h2><a class="animsition-link return" href="../assignments.html">Return to Assignments</a></h2>
+            </div>
+            <div class="row">
+                <p>&copy; 2017 Designed & Developed by Jose Torralba</p>
+            </div>
+        </footer>
 	</div>
+    <!-- Sketch -->
+    <script src="js/p5.min.js"></script>
+    <script src="js/sketch.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <!-- Animsition -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../animsition/js/animsition.min.js"></script> 
+    <script src="../../animsition/js/fade.js"></script>
     <!-- Responsive Sketch -->
     <script type="text/javascript">
         window.onload = () => {

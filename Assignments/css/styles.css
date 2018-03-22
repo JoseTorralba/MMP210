@@ -1,271 +1,201 @@
+/*=============================================
+Global Styles
+=============================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
-	margin: 0;
-	padding: 0;
-    width: 100%;
-	height: 100%;
-	background-color: #fff;
+    font-family: 'Dosis', sans-serif;
+    padding-top: 2em;
+    background-color: #fff;
+    color: #555;
+    font-weight: 30;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
 }
 
-
-.container-fluid {
-	width: 100%;
-	margin: 0 auto;
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
 }
 
+/*=============================================
+Navbar
+=============================================*/
 
-/* 
-=============================================
-Navigation
-=============================================
-*/
-
-.navbar-default {
-	border-color: transparent;
-	background-color: transparent;
+#mainNav {
+    background-color: rgba(0, 0, 0, 1) !important;
 }
 
-.navbar .navbar-nav {
-	display: inline-block;
-	float: right;
+.navbar-brand {
+    font-size: 22px;
+    letter-spacing: 2px;
 }
 
-.navbar-brand{
-    
-    font-weight: 400;
-    transition: 1s;
-    font-size: 30px;
-}
-
-#nav-name{
-
-    color: black;
-
-}
-
-.navbar-toggle {
-	float: right;
-}
-
-.navbar-header {
-	text-align: center;
-}
-
-.navbar .navbar-collapse {
-	text-align: center;
-}
-
-
-ul {
-    
-	font-size: 18px;
-    letter-spacing: 1px;
+.nav-link {
+    color: white;
+    font-size: 18px;
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    
+    letter-spacing: 2px;
 }
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-	background-color: #B70123;
-	color: white;
-	transition: color 0.1s ease-in-out;
-	transition: all 0.5s;
+/*=============================================
+Header
+=============================================*/
+
+header {
+    background-image: url(../img/everstream.jpeg), linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 1) 100%);;
+    height: 100vh;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-a {
-	color: black;
-	transition: color 0.1s ease-in-out;
-	transition: all 0.5s;
+header h1 {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 350%;
+    color: #fff;
 }
 
-a:hover {
-	color: red;
-    text-decoration: none;
+header h2 {
+    padding-bottom: 0.5em;
+
 }
 
-/* 
-=============================================
-Header Image
-=============================================
-*/
-
-.header {
-  height: 300px;
-  display: flex;
-  align-items: center;
-  background: url('../../img/temp.jpg') ,rgba(0,0,0, .5);
-  background-blend-mode: overlay;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
+.icons {
+    text-align: center;
 }
 
+#code-icon,
+#js-icon {
 
-/**/
-
-h1 {
-	font-size: 90px;
-	color: white;
-	text-align: center;
-    font-weight: lighter;
-	font-family: 'Rajdhani', sans-serif;
+    font-size: 350%;
 }
-h2 {
-	color: black;
-	text-align: center;
-	font-size: ;
+
+#code-icon {
+    color: orangered;
+}
+
+#js-icon {
+    color: yellow;
+}
+
+header a {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.assignment-button {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #000;
+    border-color: #fff;
+    color: #fff;
+    padding: 0.8em 2em;
+    margin-top: 1em;
+    transition: color 0.3s;
+}
+
+.assignment-button:hover {
+    color: #22B7C8;
+
+}
+
+/*=============================================
+Assignments Section
+=============================================*/
+
+.assignments {
+    margin-top: 50px;
+}
+
+.row div {
+    padding: 1.5em;
+}
+
+.assignments h3 {
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 2em;
     font-weight: bold;
-    font-family: 'Rajdhani', sans-serif;
-    padding-bottom: 20px;
-}
-p {
-	width: auto;
-	color: black;
-	vertical-align: middle;
-	padding-bottom: 25px;
 }
 
+.assignments h3:after {
+    display: block;
+    height: 2px;
+    background-color: rgba(168, 168, 168, 0.65);
+    content: " ";
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
 
-
-/* 
-=============================================
-Assignment Container
-=============================================
-*/
 img {
-	width: 100%;
+    margin: 0 auto;
+	width: 75%;
 }
 
-#assignments {
-
-    margin: auto;
-    width: 80%;
-/*    border: 3px solid red;*/
-
+.first-row,
+.second-row,
+.third-row,
+.fourth-row {
+    padding-top: 2em;
+    margin-bottom: 5em;
+    text-align: center;
 }
 
 .assignment-container {
-
     padding-top: 2em;
-
 }
-
-.assignment-hover {
-	margin-bottom: 2em;
-}
-
-.assignment-hover a {
-	text-decoration: none;
-	color: azure;
-	position: relative;
-
-}
-
-.caption {
-	transition: .5s;
-}
-
-.assignment-hover a .caption {
-	opacity: 0;
-	position: absolute;
-	text-align: center;
-	top: 0;
-	font-size: 23px;
-	display: block;
-	font-weight: bold;
-	font-family: 'Saira', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	width: 100%;
-    background-color: #B70123;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.assignment-hover a .caption b {
-    font-family: 'Saira', sans-serif;
-	font-size: 20px;
-	font-weight: lighter;
-	text-align: center;
-	text-transform: none;
-}
-
-.assignment-hover a:hover .caption {
-	opacity: 10;
-}
-
-.assignment-hover a img {
-	transition: .5s;
-}
-
-.assignment-hover a:hover img {
-    
-	opacity: .3;
-	
-}
-
-/* 
-=============================================
-Centers Final Assignment
-=============================================
-*/
-
 
 .center{
     float: none;
     margin: 0 auto;
+    padding-bottom: 2em;
 }
 
-
-.back-top{
-
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-
-    
-}	
-
-/* 
-=============================================
+/*=============================================
 Footer
-=============================================
-*/
+=============================================*/
 
-
-.footer {
-	text-align: center;
-	background-color: black;
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	height: 100px;
+footer {
+    background-color: #000;
+    padding: 30px;
+    font-size: 80%;
 }
 
-.text-muted {
-    color: azure;
-	text-align: center;
-	padding-top: 40px;
+h3 {
+    margin: 0 auto;
 }
 
-
-
-/* Responsive Text*/
-@media screen and (max-width: 768px) {
-	h1 {
-		font-size: 45px;
-	}
-	
-	p {
-    }
-
-
-#assignments {
-
-    margin: auto;
-    width: 80%;
-/*    border: 3px solid green;*/
-
+#back-top {
+    color: #fff;
+    font-size: 80%;
+    text-decoration: none;
+    transition: color 0.4s;
 }
 
+#back-top:hover {
+    color: #22B7C8;
+}
+
+footer p {
+    margin: 0 auto;
+    margin-top: 15px;
+    color: #fff;
 }

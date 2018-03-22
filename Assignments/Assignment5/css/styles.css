@@ -1,191 +1,119 @@
+/*=============================================
+Global Styles
+=============================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
+    font-family: 'Dosis', sans-serif;
     background-color: #fff;
+    color: #555;
+    font-weight: 30;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
 }
 
 .container {
-	max-width: 1000px;
+	max-width: 950px;
 	margin: 0 auto;
 }
 
-
-
-header {
-	text-align: center;
-	background-color: black;
-	border: solid;
-	border-right-style: none;
-	border-left-style: none;
+.row {
+    max-width: 1040px;
+    margin: 0 auto;
 }
 
+/*=============================================
+Navbar
+=============================================*/
 
-
-/* Nav Starts Here */
-
-
-/* Makes the background of the Navbar Transparent*/
-
-.navbar-default {
-	border-color: transparent;
-	background-color: transparent;
+#mainNav {
+    background-color: rgba(0, 0, 0, 1) !important;
 }
 
-.navbar .navbar-nav {
-    display: inline-block;
-	float: none;
-	
+.navbar-brand {
+    font-size: 22px;
+    letter-spacing: 2px;
 }
 
-
-.navbar-toggle {
-    float:none;
-
-}   
-.navbar-header {
-    text-align:center;
+.nav-link {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.navbar .navbar-collapse {
-	text-align: center;
-}
-
-ul {
-	font-size: 23px;
-    font-weight: bold;
-	font-family: 'Saira', sans-serif;
-}
-
-
-.active {
-
-}
-
-/* Adds color to the nav when hovering over. */
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-	background-color: #B70123;
-	color: white;
-	transition: color 0.1s ease-in-out;
-	transition: all 0.5s;
-}
-a {
-	color: black;
-	transition: color 0.1s ease-in-out;
-	transition: all 0.5s;
-}
-a:hover {
-	color: red;
-}
-
-/* Nav Ends Here */
-
+/*=============================================
+Header
+=============================================*/
 
 h1 {
-	font-size: 90px;
-	color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	font-size: 200%;
+	color: #000;
 	text-align: center;
-    font-weight: lighter;
-	font-family: 'Rajdhani', sans-serif;
-}
-	
-h2 {
-	color: black;
-	text-align: center;
-	font-size: ;
-    font-weight: bold;
-    font-family: 'Rajdhani', sans-serif;
 }
 
-
-
-
-h3{
-    text-align: center;
-    color: black;
-}
-
-
-	
-.text {
-    margin-top: 25px;
-}
-	
-p {
-    width: auto;
-    color: black;
-    vertical-align: middle;
-    padding-bottom: 25px;
-}
-
-
-/* Link Back to Assignments */
-
-a:hover {
-    text-decoration: none;
-
-	color: #B70123;
-    
-}
-
-.return{
-    font-size: 30px;
-    font-weight: bold;
-	font-family: 'Rajdhani', sans-serif;
-    text-decoration: none;
-    text-align: center;
-    
-}	
-
-
-.footer {
-    text-align: center;
-    background-color: black;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-}
-	
-.text-muted {
-    color: azure;
-    text-align: center;
-    padding-top: 40px;
-}
-
-
-
-img{
+h1:after {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-    width: 60%;
+    height: 2px;
+    background-color: rgba(168, 168, 168, 0.65);
+    content: " ";
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
-/* Responsive Text*/
-	
-@media screen and (max-width: 768px) {
-    h1 {
-		font-size: 45px;
-    }
-    img {
-        width: 100%;
-    }
-    p {
+/*=============================================
+Footer
+=============================================*/
 
-    }   
-
-    .return {
-        font-size: 20px;
-    }
-   
+footer {
+    background-color: #000;
+    padding: 30px;
+    font-size: 80%;
 }
 
-/* Responsive sketch */
+h2 {
+    margin: 0 auto;
+}
+
+.return {
+    color: #fff;
+    font-size: 80%;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+.return:hover {
+    color: #22B7C8;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 0 auto;
+    margin-top: 15px;
+    color: #fff;
+}
+
+/*=============================================
+Responsive Sketch
+=============================================*/
+
 #defaultCanvas0 {
     height: auto;
     width: 100%;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 1em;
 }

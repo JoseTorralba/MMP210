@@ -1,194 +1,106 @@
+/*=============================================
+Global Styles
+=============================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
-	margin: 0;
-	padding: 0;
-    width: 100%;
-	height: 100%;
-	background-color: #fff;
-}
-
-.container {
-	width: 100%;
-	margin: 0 auto;
-}
-
-/* 
-=============================================
-Navigation
-=============================================
-*/
-
-.navbar-default {
-	border-color: transparent;
-	background-color: transparent;
-}
-
-.navbar .navbar-nav {
-	display: inline-block;
-	float: right;
-}
-
-.navbar-brand{
-    
-    font-weight: 400;
-    transition: 1s;
-    font-size: 30px;
-}
-
-#nav-name{
-
-    color: black;
-
-}
-
-.navbar-toggle {
-	float: right;
-}
-
-.navbar-header {
-	text-align: center;
-}
-
-.navbar .navbar-collapse {
-	text-align: center;
-}
-
-
-ul {
-    
-	font-size: 20px;
-	font-weight: bold;
-	font-family: 'Saira', sans-serif;
-    
-}
-
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-	background-color: #B70123;
-	color: white;
-	transition: color 0.1s ease-in-out;
-	transition: all 0.5s;
-}
-
-a {
-	color: black;
-	transition: color 0.1s ease-in-out;
-	transition: all 0.5s;
-}
-
-a:hover {
-	color: red;
-    text-decoration: none;
-}
-
-
-
-/* 
-=============================================
-Headers
-=============================================
-*/
-
-
-
-h1 {
-	font-size: 130px;
-	color: white;
-	text-align: center;
-	font-weight: lighter;
-	font-family: 'Rajdhani', sans-serif;
-}
-
-
-.text {
-    width:80%;
-	display: block;
-    margin: 0 auto;
-	margin-top: 25px;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-
-p{
-
-    color: black;
+    font-family: 'Dosis', sans-serif;
+    background-color: #fff;
+    color: #555;
+    font-weight: 30;
     font-size: 20px;
-    padding-bottom: 10px;
-
+    text-rendering: optimizeLegibility;
 }
 
-/* 
-=============================================
-Links
-=============================================
-*/
+/*=============================================
+Navbar
+=============================================*/
 
+#mainNav {
+    background-color: rgba(0, 0, 0, 1) !important;
+}
 
-.link {
+.navbar-brand {
+    font-size: 22px;
+    letter-spacing: 2px;
+}
 
-    font-size: 23px;
+.nav-link {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*=============================================
+Header
+=============================================*/
+
+header {
+    background-image: url("../img/everstream.jpeg"), linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 1) 100%);
+    height: 100vh;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.home-title{
+    text-transform: uppercase;
+    padding-top: 3em;
+    font-size: 400%;
     text-align: center;
-    text-decoration: none;
-    color: black;
-
+    color: #fff;
 }
-/* 
-=============================================
+
+.home-sub-title {
+    text-align: center;
+    font-size: 160%;
+    font-weight: 300;
+    color: #fff;
+    padding-top: 1em;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.home-btn {
+    border: 1px #fff solid;
+    border-radius: 200px;
+    padding: 1em 2.5em;
+    margin-top: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #000;
+    transition: color 0.5s;
+}
+
+.home-btn:hover {
+    background-color: #000;
+    color: #22B7C8;
+}
+
+/*=============================================
 Footer
-=============================================
-*/
+=============================================*/
 
 .footer {
 	text-align: center;
-	background-color: black;
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	height: 100px;
-    position: relative;
+    margin-top: 9.5em;
 }
 
-.text-muted {
-	color: azure;
-    font-size: 15px;
-	text-align: center;
-	padding-top: 40px;
-}
-
-/* 
-=============================================
-Header Image
-=============================================
-*/
-
-.header {
-  height: 560px;
-  display: flex;
-  align-items: center;
-  background: url('../img/temp.jpg') ,rgba(0,0,0, .5);
-  background-blend-mode: overlay;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-}
-
-
-/* 
-=============================================
-Responsive
-=============================================
-*/
-@media screen and (max-width: 768px) {
-	h1 {
-		font-size: 35px;
-	}
-	
-    .item img {
-		width: 400%;
-	}
-	
-	p {
-        text-align: center;
-    }
-
+.footer p {
+    color: #fff;
+    font-size: 85%;
+    word-spacing: 1px;
 }

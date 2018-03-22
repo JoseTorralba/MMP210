@@ -1,13 +1,34 @@
+/*=============================================
+Global Styles
+=============================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	background-color: #fff;
+    font-family: 'Dosis', sans-serif;
+    background-color: #fff;
+    color: #555;
+    font-weight: 30;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
 }
 
 .container {
-	max-width: 1000px;
+	max-width: 700px;
 	margin: 0 auto;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 header {
@@ -18,155 +39,92 @@ header {
 	border-left-style: none;
 }
 
+/*=============================================
+Navbar
+=============================================*/
 
-/* Nav Starts Here */
-
-
-/* Makes the background of the Navbar Transparent*/
-
-.navbar-default {
-	border-color: transparent;
-	background-color: transparent;
+#mainNav {
+    background-color: rgba(0, 0, 0, 1) !important;
 }
 
-.navbar .navbar-nav {
-	display: inline-block;
-	float: none;
+.navbar-brand {
+    font-size: 22px;
+    letter-spacing: 2px;
 }
 
-.navbar-toggle {
-	float: none;
+.nav-link {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.navbar-header {
-	text-align: center;
+.arrow {
+    margin: 0 auto;
+    margin-top: 2em;
+	width: 10%;
 }
 
-.navbar .navbar-collapse {
-	text-align: center;
-}
-
-ul {
-	font-size: 23px;
-	font-weight: bold;
-	font-family: 'Saira', sans-serif;
-}
-
-.active {}
-
-
-/* Adds color to the nav when hovering over. */
-
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
-	background-color: #B70123;
-	color: white;
-	transition: color 0.1s ease-in-out;
-	transition: all 0.5s;
-}
-
-a {
-	color: black;
-	transition: color 0.1s ease-in-out;
-	transition: all 0.5s;
-}
-
-a:hover {
-	color: red;
-}
-
-/* Nav Ends Here */
+/*=============================================
+Header
+=============================================*/
 
 h1 {
-	font-size: 90px;
-	color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	font-size: 200%;
+	color: #000;
 	text-align: center;
-	font-weight: lighter;
-	font-family: 'Rajdhani', sans-serif;
+}
+
+h1:after {
+    display: block;
+    height: 2px;
+    background-color: rgba(168, 168, 168, 0.65);
+    content: " ";
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/*=============================================
+Footer
+=============================================*/
+
+footer {
+    background-color: #000;
+    padding: 30px;
+    font-size: 80%;
 }
 
 h2 {
-	color: black;
-	text-align: center;
-	font-size: ;
-	font-weight: bold;
-	font-family: 'Rajdhani', sans-serif;
-}
-
-h3 {
-	text-align: center;
-	color: black;
-}
-
-.text {
-	margin-top: 25px;
-}
-
-p {
-	width: auto;
-	color: black;
-    text-align: center;
-	padding-bottom: 25px;
-}
-
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-    width: 30%;
-}
-
-/* Link Back to Assignments */
-
-a:hover {
-	text-decoration: none;
-	color: #B70123;
+    margin: 0 auto;
 }
 
 .return {
-	font-size: 30px;
-	font-weight: bold;
-	font-family: 'Rajdhani', sans-serif;
-	text-decoration: none;
-	text-align: center;
+    color: #fff;
+    font-size: 80%;
+    text-decoration: none;
+    transition: color 0.4s;
 }
 
-.footer {
-	text-align: center;
-	background-color: black;
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	height: 100px;
+.return:hover {
+    color: #22B7C8;
+    text-decoration: none;
 }
 
-.text-muted {
-	color: azure;
-	text-align: center;
-	padding-top: 40px;
+footer p {
+    margin: 0 auto;
+    margin-top: 15px;
+    color: #fff;
 }
 
+/*=============================================
+Responsive Sketch
+=============================================*/
 
-/* Responsive Text*/
-
-@media screen and (max-width: 768px) {
-	h1 {
-		font-size: 45px;
-	}
-	img {
-		width: 70%;
-	}
-	p {
-    }
-
-    .return {
-        font-size: 20px;
-    }
-
-}
-
-/* Responsive sketch */
 #defaultCanvas0 {
     height: auto;
     width: 100%;
