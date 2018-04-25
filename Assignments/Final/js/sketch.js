@@ -142,9 +142,9 @@ var sideText = {
 };
 
 function setup() {
-    createCanvas(1400, 900);
-    background(255);
+    createCanvas(1400, 640);
 
+    fill('white');
     /* Text Above Character Chart */
     textSize(25);
     text("a", upperText.x, upperText.y);
@@ -167,24 +167,23 @@ function setup() {
 
     /* Text */
     textSize(30);
-    fill('black');
     text("Hiragana", 100, 50);
 
     textSize(20);
     text("*/// = No Character Given", 350, 50);
 
-    textSize(25);
+    textSize(20);
 	text(hiragana, 100, 100, 450, 300);
 
     /* Phrases */
-    text("Basic Phrases", 100, 350);
+    text("Basic Phrases", 100, 270);
 
-  	phrase1 = new Button('おはよう (Good Morning)', 100, 550, "audio/goodmorning.mp3");
-  	phrase2 = new Button('ありがとうございます (Thank You)', 100, 610, "audio/thankyou.mp3");
-  	phrase3 = new Button('ごめんなさい (Sorry)', 100, 670, "audio/sorry.mp3");
-  	phrase4 = new Button('すみません (Excuse Me)', 100, 730, "audio/excuseme.mp3");
-  	phrase5 = new Button('さようなら (Goodbye)', 100, 790, "audio/goodbye.mp3");
-  	phrase6 = new Button('おやすみなさい (Goodnight)', 100, 850, "audio/goodnight.mp3");
+  	phrase1 = new Button('おはよう (Good Morning)', 100, 460, "audio/goodmorning.mp3");
+  	phrase2 = new Button('ありがとうございます (Thank You)', 100, 520, "audio/thankyou.mp3");
+  	phrase3 = new Button('ごめんなさい (Sorry)', 100, 580, "audio/sorry.mp3");
+  	phrase4 = new Button('すみません (Excuse Me)', 100, 640, "audio/excuseme.mp3");
+  	phrase5 = new Button('さようなら (Goodbye)', 100, 700, "audio/goodbye.mp3");
+  	phrase6 = new Button('おやすみなさい (Goodnight)', 100, 760, "audio/goodnight.mp3");
 
     /* Chart of Characters */
     var x = 700;
