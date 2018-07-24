@@ -7,10 +7,6 @@ GLOBAL STYLES
     box-sizing: border-box;
 }
 
-html {
-    min-height: 100%;
-}
-
 body {
     font-family: 'Dosis', sans-serif;
     padding-top: 2em;
@@ -19,6 +15,8 @@ body {
     font-weight: 30;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    /* overflow-x hides text-box sticking out of header */
+    overflow-x: hidden;
 }
 
 .row {
@@ -72,7 +70,7 @@ header {
     width: 1140px;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .text-box h1 {
@@ -212,10 +210,7 @@ ABOUT SECTION
     border-radius: 50%;
 }
 
-.about-text {
-    margin-top: 45px;
-    color: #fff;
-}
+.about-text { color: #fff; }
 
 .link {
     color: #9af5ff;
