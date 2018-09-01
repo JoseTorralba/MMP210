@@ -1,0 +1,182 @@
+.center-text {
+  text-align: center; }
+
+.margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.margin-bottom-medium {
+  margin-bottom: 6rem; }
+
+.margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.margin-top-small {
+  margin-top: 1.5rem; }
+
+.margin-top-medium {
+  margin-top: 4rem; }
+
+.margin-top-big {
+  margin-top: 8rem; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 4rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif; }
+
+.primary-heading {
+  font-size: 8rem;
+  font-weight: 300;
+  margin-bottom: 2rem; }
+
+.secondary-heading {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 6px;
+  margin-bottom: 6rem; }
+
+.third-heading {
+  padding-bottom: 8.5rem;
+  font-size: 3.5rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.fourth-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding-bottom: 3rem; }
+  .fourth-heading:after {
+    display: block;
+    height: 2px;
+    background-color: rgba(168, 168, 168, 0.65);
+    content: " ";
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 2rem; }
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 200;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem; }
+
+.btn--color-1 {
+  background-color: rgba(29, 29, 29, 0.164);
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all 0.5s; }
+  .btn--color-1:hover {
+    background-color: #000; }
+
+.btn--color-2 {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-color: #000;
+  box-shadow: 0 2px 30px #d3d3d3;
+  transition: all 0.5s; }
+  .btn--color-2:hover {
+    box-shadow: 0 2px 30px #838383; }
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/wildspire-waste.jpeg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative; }
+  .header__text-box {
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    width: 1140px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%); }
+
+.assignment-section {
+  padding-top: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 50px #d3d3d3;
+  transition: box-shadow 0.5s;
+  text-align: center; }
+  .assignment-section:hover {
+    box-shadow: 0 2px 50px #838383; }
+
+.assignment {
+  padding-top: 4rem;
+  padding-bottom: 5rem; }
+  .assignment__img {
+    margin: 0 auto;
+    width: 70%;
+    transition: all .3s; }
+    .assignment__img:hover {
+      transform: scale(1.1);
+      opacity: 0.7; }
+
+.about-section {
+  padding: 6rem;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/everstream.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff; }
+
+.about__img {
+  width: 75%;
+  border-radius: 50rem;
+  box-shadow: 0 2px 50px #d3d3d327; }
+
+.about__text {
+  font-size: 2rem;
+  padding-bottom: 2rem; }
+  .about__text--link {
+    color: #9af5ff;
+    text-decoration: none;
+    transition: color .3s; }
+    .about__text--link:hover {
+      color: #22B7C8; }
+
+.footer {
+  background-color: #000;
+  padding: 4rem;
+  color: #fff; }
+  .footer__text {
+    font-size: 1.6rem; }

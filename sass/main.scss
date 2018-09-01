@@ -1,0 +1,261 @@
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 4rem;
+$gutter-horizontal: 6rem;
+
+// VARIABLES
+$color-white: #fff;
+$color-black: #000;
+
+// clears floats and gives it height
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// Helpful Classes
+.center-text { text-align: center; }
+
+.margin-bottom-small { margin-bottom: 1.5rem; }
+.margin-bottom-medium { margin-bottom: 6rem; }
+.margin-bottom-big { margin-bottom: 8rem; }
+
+.margin-top-small { margin-top: 1.5rem; }
+.margin-top-medium { margin-top: 4rem; }
+.margin-top-big { margin-top: 8rem; }
+
+
+.row {
+    // 1140px divided by 10 is 114rem
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    // .row:not()
+    &:not(:last-child) {
+        // removes margin from bottom of row container
+        // if added on .row it'll show
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+    // ^ gets the first thing from a row or something instead of writing out col-1-of and shit
+    [class^= "col-"] {
+
+        //using a float removes the height of the row, clearfix fixes it
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+
+    .col-1-of-2 {
+        // to use a variable in calc must put a hashtag then curly braces
+        width: calc((100% - #{$gutter-horizontal}) / 2);   
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    }
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines 1rem don't change
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+// HEADINGS
+.primary-heading {
+    font-size: 8rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.secondary-heading {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 6px;
+    margin-bottom: 6rem;
+}
+
+.third-heading {
+    padding-bottom: 8.5rem;
+    font-size: 3.5rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.fourth-heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-bottom: 3rem; 
+
+    &:after {
+        display: block;
+        height: 2px;
+        background-color: rgba(168, 168, 168, 0.65);
+        content: " ";
+        width: 240px;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+}
+
+// BUTTON
+.btn {
+
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.7rem;
+        font-weight: 200;
+        padding: 1.5rem 4rem;
+        border-radius: 10rem;
+    }
+
+    &--color-1 {
+        background-color: rgba(29, 29, 29, 0.164);
+        border: 1px solid $color-white;
+        color: $color-white;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: $color-black;
+        }
+    }
+
+    &--color-2 {
+        background-color: #fff;
+        color: $color-black;
+        border: 1px solid $color-black;
+        border-color: $color-black;
+        box-shadow: 0 2px 30px #d3d3d3;
+        transition: all 0.5s;
+
+        &:hover {
+            box-shadow: 0 2px 30px #838383;
+        }
+    }
+}
+
+// HEADER
+.header {
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(#000, 0.4), rgba(#000, 0.4)), url(../img/wildspire-waste.jpeg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    // for transform stuff
+    position: relative;
+
+    &__text-box {
+        position: absolute;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        width: 1140px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
+}
+
+// ASSIGNMENTS SECTION
+.assignment-section {
+    padding-top: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px; 
+    margin-left: 80px; 
+    margin-right: 80px; 
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 50px #d3d3d3;
+    transition: box-shadow 0.5s;
+    text-align: center;
+
+    &:hover {
+        box-shadow: 0 2px 50px #838383;
+    }   
+}
+
+.assignment {
+
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+
+    &__img {
+        margin: 0 auto;
+        width: 70%;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.1);
+            opacity: 0.7;
+        }
+    }
+}
+
+// ABOUT SECTION
+.about-section {
+    padding: 6rem;
+    background-image: linear-gradient(to top, rgba(#000, 0.3), rgba(#000, 0.3)), url(../img/everstream.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: $color-white;
+}
+
+.about {
+
+    &__img {
+        width: 75%;
+        border-radius: 50rem;
+        box-shadow: 0 2px 50px #d3d3d327;
+    }
+
+    &__text {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+
+        &--link {
+            color: #9af5ff;
+            text-decoration: none;
+            transition: color .3s;
+
+            &:hover {
+                color: #22B7C8;
+            }
+        }
+    }
+}
+
+.footer {
+
+    background-color: #000;
+    padding: 4rem;
+    color: $color-white;
+
+    &__text {
+        font-size: 1.6rem;
+    }
+}
