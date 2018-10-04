@@ -1,0 +1,57 @@
+.final-section {
+    min-height: calc(100vh - 130px);
+    position: relative;
+}
+
+.final-heading {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+    &::after {
+        display: block;
+        margin: 0 auto;
+        margin-top: .5rem;
+        height: 2px;
+        background-color: $primary-color;
+        content: " ";
+        width: 450px;
+    }
+}
+
+.final-secondary-heading {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.final-text {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+#final-canvas {
+    position: absolute;
+    top: 19rem;
+    left: 32rem;
+}
+
+button {
+    font-family: 'Sintony', sans-serif;
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align: center;
+
+    transition: all 0.3s;
+
+    &:hover {
+        color: $primary-color-light;
+        background-color: $color-black;
+        transform: scale(1.2);
+    }
+}

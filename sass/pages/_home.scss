@@ -1,0 +1,21 @@
+section {
+    padding: 8rem 0;
+}
+// ASSIGNMENTS SECTION
+.assignment-section {
+
+}
+
+// ABOUT SECTION
+.about-section {
+    padding: 6rem;
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-black, .5),
+        rgba($color-black, .6)),
+        url(../img/ancient-forest.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: $color-white;
+}

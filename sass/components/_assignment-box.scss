@@ -1,0 +1,25 @@
+.assignment-box {
+    text-align: center;
+    background-color: $color-white;
+    padding: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    transition: all .3s;
+    backface-visibility: hidden;
+
+    &:hover {
+        transform: translateY(-2rem) scale(1.05);
+        box-shadow: 0 1.5rem 4rem rgba($primary-color-dark, .3);
+    }
+
+    &__img {
+        margin: 0 auto;
+        width: 100%;
+        transition: all .3s;
+    }
+
+    @include respond(tablet-portrait) {
+        margin-bottom: 6rem;
+    }
+}

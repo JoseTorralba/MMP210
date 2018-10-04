@@ -1,0 +1,38 @@
+// BUTTON
+.btn {
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.7rem;
+        font-weight: 400;
+        padding: 1.5rem 4rem;
+        border-radius: 10rem;
+    }
+
+    &--teal {
+        background-color: rgba(29, 29, 29, 0.164);
+        border: 1px solid $color-white;
+        color: $color-white;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: $primary-color;
+            border-color: $color-black;
+            color: $color-black;
+        }
+    }
+
+    &--white {
+        background-color: none;
+        color: $color-black;
+        border: 1px solid $color-black;
+        box-shadow: 0 2px 30px #d3d3d3;
+        transition: all 0.3s;
+
+        &:hover {
+            box-shadow: 0 2px 30px #838383;
+            background-color: $primary-color-light;
+        }
+    }
+}

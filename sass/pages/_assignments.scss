@@ -1,0 +1,27 @@
+.assignment-heading {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 6rem;
+
+    &::after {
+        display: block;
+        margin: 0 auto;
+        margin-top: .5rem;
+        height: 2px;
+        background-color: $primary-color;
+        content: " ";
+        width: 450px;
+    }
+}
+
+#defaultCanvas0 {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+
+    @include respond(phone) {
+        width: 100%;
+    }
+}

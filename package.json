@@ -1,0 +1,23 @@
+{
+  "name": "mmp210",
+  "version": "1.0.0",
+  "description": "MMP 210 class website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseTorralba/MMP210.git"
+  },
+  "author": "Jose Torralba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseTorralba/MMP210/issues"
+  },
+  "homepage": "https://github.com/JoseTorralba/MMP210#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
