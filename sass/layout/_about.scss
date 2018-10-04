@@ -1,18 +1,13 @@
 .about {
-
     &__img {
         width: 100%;
         border-radius: 50rem;
         box-shadow: 0 1px 8px $primary-color-light;
 
         @include respond(tablet-portrait) {
-            margin-left: 25%;
-            width: 50%;
-        }
-
-        @include respond(phone) {
-            width: 100%;
             margin: 0 auto;
+            display: block;
+            width: 70%;
         }
     }
 
